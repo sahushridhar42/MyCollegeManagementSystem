@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "UserHome";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+
+<h2></h2>
+
+<script>
+    $(document).ready(function () {
+        var userid = "@Session["uid"]";
+      //  alert(userid);
+        $.post("/User/GetAllUser", { 'userid': userid }, function (Data) {
+            for (var i = 0; i < Data.length; i++)
+            {
+                var row = "<tr><td style='height:30px;width:200px' class='btn-info'><h6><b><label> Name : </label></b></h6></td><td style='height:30px;width:400px' ><h6><label>" + Data[i].FullName + " </label></h6></td></tr>" +
+                "<tr><td style='height:30px;width:200px' class='btn-info'><b><h6><label> Address : </label></b></h6></td><td style='height:30px;width:400px' ><b><h6><label>" + Data[i].PermanentAddress + "</label><b><h6></td></tr>" +
+                "<tr><td style='height:30px;width:200px' class='btn-info'><b><h6><label> Gender : </label></b></h6></td><td style='height:30px;width:400px' ><b><h6><label>" + Data[i].Gender + "</label><b><h6></td></tr>" +
+                "<tr><td style='height:30px;width:200px'  class='btn-info'><b><h6><label> Contact : </label></b></h6></td><td style='height:30px;width:400px' ><b><h6><label>" + Data[i].ContactNo + "</label><b><h6></td></tr>" +
+                "<tr><td style='height:30px;width:200px'  class='btn-info'><b><h6><label> Login Name : </label></b></h6></td><td style='height:30px;width:400px' ><b><h6><label>" + Data[i].LoginName + "</label><b><h6></td></tr>" +
+                 "<tr><td class='btn-info' style='height:30px;width:200px' ><b><h6><label> Password : </label></b></h6></td><td style='height:30px;width:400px' ><b><h6><label>" + Data[i].Password + "</label><b><h6></td></tr>" +
+                 "<tr><td class='btn-info' style='height:30px;width:200px' ><b><h6><label> Branch Year : </label></b></h6></td><td style='height:30px;width:400px' ><b><h6><label>" + Data[i].Branch + "</label><b><h6></td></tr>" +
+                 "<tr><td class='btn-info' style='height:30px;width:200px' ><b><h6><label> Acadamic Year : </label></b></h6></td><td style='height:30px;width:400px' ><b><h6><label>" + Data[i].AcadamicYear + "</label><b><h6></td></tr>" +
+                 "<tr><td class='btn-info' style='height:30px;width:200px' ><b><h6><label> Gardian Name Year : </label></b></h6></td><td style='height:30px;width:400px' ><b><h6><label>" + Data[i].GardianName + "</label><b><h6></td></tr>" +
+                 "<tr><td class='btn-info' style='height:30px;width:200px' ><b><h6><label> Gardian Contact : </label></b></h6></td><td style='height:30px;width:400px' ><b><h6><label>" + Data[i].Contact + "</label><b><h6></td></tr>" +
+                 "<tr><td class='btn-info' style='height:30px;width:200px' ><b><h6><label> Gardian Address: </label></b></h6></td><td style='height:30px;width:400px' ><b><h6><label>" + Data[i].Address + "</label><b><h6></td></tr>" +
+                 "<tr><td class='btn-info' style='height:30px;width:200px' ><b><h6><label> Gardian Profession: </label></b></h6></td><td style='height:30px;width:400px' ><b><h6><label>" + Data[i].Profession + "</label><b><h6></td></tr>"
+              $("#tbody").append(row);
+            }
+        });
+    });
+</script>
+
+<div class="container">
+<div class="grids">
+    <div class="contact">
+        <div class="contact-left">
+            
+            <h2>User Details </h2>
+           
+            
+            <div id="contact-form-cont" class="one_half">
+             
+            </div>
+                <table class="table" >
+
+                    <tbody id="tbody"></tbody>
+
+                </table>
+                
+        </div>
+        <div class="clear"></div>
+
+    </div>
+</div>
+    </div>

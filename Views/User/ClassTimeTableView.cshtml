@@ -1,0 +1,112 @@
+﻿@{
+    ViewBag.Title = "GetTimeTable";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2></h2>
+
+<script>
+    $(document).ready(function () {
+        var bachID;
+        var Acadamicyear;       
+        var userid = "@Session["uid"]";
+       // alert(userid);
+        $.post("/User/GetAllUser", { 'userid': userid }, function (Data) {
+            for (var j = 0; j < Data.length; j++) {
+                bachID = Data[j].BranchID;
+                Acadamicyear = Data[j].AcadamicYear;
+            }
+            $.post("/User/GetclassTimeTable1monday", { 'acadamicyear': Acadamicyear, 'bach': bachID }, function (Data) {
+                if (Data == 0) {
+                    alert("Time table not available")
+                    //var str = "Record not Available";
+                    //var row = "<tr><td><h2> " + str + "  </h2></td>"
+                    //$("#tbody").append(row);
+                }
+                else {
+                    for (var i = 0; i < Data.length; i++) {
+                        var row = "<tr> <td><label>" + Data[i].Day + " </label></td> <td><label>" + Data[i].Subject + " </label></td>" +
+                                   "<td><label>" + Data[i].Time + " </label></td></tr>";
+
+                        $("#tbmon").append(row);
+                    }
+                }
+            });
+        });
+
+       
+    });
+</script>
+
+<div class="container">
+    <center>
+    <h2>class Time Table</h2>
+        </center>
+    <br />
+    <br />
+     <center>
+         <div id="contact-form-cont" class="one_half">
+             <div class="row">
+                 <div class="col-sm-2">
+                 @*   Monday :*@
+                 </div>
+                 <div class="col-sm-8">
+                       <table class="table col-sm-4 responsive" style="border-collapse: collapse; color:black;width: 100%;" >
+                  <thead style="background-color: #4CAF50;font-size:20px">
+                      <tr>
+                          <td>Day</td>
+                          <td>Subject</td>                     
+                          <td>Time</td>
+                      </tr>
+                  </thead>
+
+                  <tbody  id="tbmon" >
+                     
+                  </tbody>
+
+@*                  <tbody id="tbtue">
+                      <tr>
+                          <td>
+                              Tuesday :
+                          </td>
+                      </tr>
+                  </tbody>
+
+                  <tbody id="tbwed">
+                       <tr>
+                          <td>
+                              Wednesday :
+                          </td>
+                      </tr>
+                  </tbody>
+
+                  <tbody id="tbthu">
+                       <tr>
+                          <td>
+                              Thursday :
+                          </td>
+                      </tr>
+                  </tbody>
+                           
+                   <tbody id="tbfri">
+                       <tr>
+                          <td>
+                              Friday :
+                          </td>
+                      </tr>
+                   </tbody>
+
+                  <tbody id="tbsat">
+                      <tr>
+                          <td>
+                              Saturday :
+                          </td>
+                      </tr>
+                  </tbody>*@
+              </table>
+                 </div>
+             </div>
+            
+             </div>
+             </center>
+</div>

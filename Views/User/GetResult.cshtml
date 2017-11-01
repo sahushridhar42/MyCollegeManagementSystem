@@ -1,0 +1,136 @@
+﻿@{
+    ViewBag.Title = "GetResult";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2></h2>
+<script>
+    $(document).ready(function () {
+        var total;
+        var percentage;
+        var totaloutofmark;
+        var FullName;
+        var address;
+        var gardian;
+        var userid = "@Session["uid"]";
+       // alert(userid);
+        $.post("/User/GetAllUser", { 'userid': userid }, function (Data) {
+            for (var j = 0; j < Data.length; j++) {
+                address = Data[j].Branch;
+               // alert(address)
+                FullName = Data[j].FullName;
+               // alert(FullName)
+                gardian = Data[j].AcadamicYear;
+               // alert(gardian)
+            }
+            $("#lblsid").html(FullName);
+            $("#lbladdress").html(address);
+            $("#lblgname").html(gardian);
+        });
+
+        $.post("/User/GetResultResult", { 'userid': userid }, function (Data) {
+            var count = Data.length;
+            var r, g;
+            for (var j = 0; j < Data.length; j++)
+            {
+                if (Data[j].Marks < 8)
+                {
+                    r = "FAIL";
+                }
+                else {
+                    r = "PASS";
+                }
+                if (Data[j].Marks >= 8 && Data[j].Marks<=10 ) {
+                    g = "D";
+                }
+
+                else if (Data[j].Marks >= 10 && Data[j].Marks <= 14) {
+                    g = "C";
+                }
+                else if (Data[j].Marks >= 14 && Data[j].Marks <= 18) {
+                    g = "B";
+                }
+                else if (Data[j].Marks >= 18 && Data[j].Marks <= 20) {
+                    g = "A";
+                }
+                var row = "<tr><td><label>" + Data[j].Subject + "</label></td><td><label>" + 20 + "</label></td> <td><lable>" + 08 + " </lable> </td> <td><label>" + Data[j].Marks + "</label></td> <td><lable>" + g + " </lable> </td> <td><lable>" + r + " </lable> </td></tr>"
+                $("#tbody").append(row);
+                totaloutofmark =( count * 20);
+            }
+           // alert(totaloutofmark);
+            $.post("/User/GetMarksTotal", { 'userid': userid }, function (Data) {
+              //  alert(Data);
+                total = Data;
+                percentage = (total / totaloutofmark) * 100;
+               // alert(percentage);
+                $("#lblper").html(percentage);
+                $("#lbltotal").html(total);
+            });
+
+        });
+
+        
+    });
+ </script>
+<div class="container">
+    <center>
+        <h2>GetResult</h2>
+    </center>
+    <div class="col-sm-5">
+         <div class="row">  
+            <div>
+                <h4>Student Name : &nbsp;&nbsp;&nbsp;<label id="lblsid">a</label></h4>
+            </div>
+        </div>
+        <div class="row">  
+            <div>
+                <h4>Branch : &nbsp;&nbsp;&nbsp;<label id="lbladdress">a</label></h4>
+            </div>
+        </div>
+        <div class="row">  
+            <div>
+                <h4>Acadamic Year : &nbsp;&nbsp;&nbsp;<label id="lblgname">a</label></h4>
+            </div>
+        </div>
+    </div>
+    <center>
+         <div id="contact-form-cont" class="one_half">
+              <table class="table col-sm-4 responsive" style="border-collapse: collapse; color:black;width: 100%;" >
+                  <thead style="background-color: #4CAF50;font-size:20px">
+                      <tr>
+                          <td>Subject</td>
+                          <td>MARK</td>
+                          <td>Passing Marks</td>
+                          <td>Obtained Marks</td>
+                          <td>Grade</td>
+                          <td>Result</td>
+                      </tr>
+                  </thead>
+                  <colgroup>
+                     @* <col width="5" />
+                      <col width="25" />
+                      <col width="5" />*@
+
+                  </colgroup>
+                  <tbody id="tbody"></tbody>
+              </table>
+             </div>
+             </center>
+    <div class="col-sm-5" style="float:right;">
+         <div class="row">  
+            <div>
+                <h4>Total : &nbsp;&nbsp;&nbsp;<label id="lbltotal">a</label></h4>
+            </div>
+        </div>
+         <div class="row">  
+            <div>
+                <h4>Percentage : &nbsp;&nbsp;&nbsp;<label id="lblper">a</label></h4>
+            </div>
+        </div>
+@*        <div class="row">  
+            <div>
+                <h4>Grade : &nbsp;&nbsp;&nbsp;<label id="lblgrade">a</label></h4>
+            </div>
+        </div>*@
+    </div>
+</div>

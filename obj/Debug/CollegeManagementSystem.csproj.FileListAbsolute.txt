@@ -1,0 +1,753 @@
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.dll
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.dll
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.dll
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.dll
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.dll
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.dll
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.dll
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.dll
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.xml
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.xml
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.xml
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.xml
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.xml
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.xml
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.xml
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.xml
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+G:\Backups of Mumbai acadamics\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.dll
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.dll
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.dll
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.dll
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.dll
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.dll
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.dll
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.dll
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.xml
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.xml
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.xml
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.xml
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.xml
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.xml
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.xml
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.xml
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+G:\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+G:\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+G:\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+G:\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+G:\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+G:\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.dll
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.dll
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.dll
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.dll
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.dll
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.dll
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.dll
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.dll
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.xml
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.xml
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.xml
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.xml
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.xml
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.xml
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.xml
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.xml
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+D:\Acadmic Film 2016\College 12 March 2016\CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.dll
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.dll
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.dll
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.dll
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.dll
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.dll
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.dll
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.dll
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.xml
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.xml
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.xml
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.xml
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.xml
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.xml
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.xml
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.xml
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+G:\12 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.dll
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.dll
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.dll
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.dll
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.dll
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.dll
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.dll
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.dll
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.xml
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.xml
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.xml
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.xml
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.xml
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.xml
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.xml
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.xml
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+G:\Backups of Mumbai acadamics\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.dll
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.dll
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.dll
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.dll
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.dll
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.dll
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.dll
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.dll
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.xml
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.xml
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.xml
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.xml
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.xml
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.xml
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.xml
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.xml
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+D:\Acadmic Project 2016\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.dll
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.dll
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.dll
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.dll
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.dll
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.dll
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.dll
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.dll
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.xml
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.xml
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.xml
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.xml
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.xml
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.xml
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.xml
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.xml
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+G:\Backups of Mumbai acadamics\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.dll
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.dll
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.dll
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.dll
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.dll
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.dll
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.dll
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.dll
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.xml
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.xml
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.xml
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.xml
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.xml
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.xml
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.xml
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.xml
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+G:\Backups of Mumbai acadamics\15 March 2016\Final\15 March 2016\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+G:\Backups of Mumbai acadamics\Editing CollegeManagementSystem (7-4-2016)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.dll.config
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.dll
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.dll
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.dll
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.dll
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.dll
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.dll
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.dll
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.dll
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.xml
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.xml
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.xml
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.xml
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.xml
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.xml
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.xml
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.xml
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+C:\Users\swapnil\Desktop\C#\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.dll
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.dll
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.dll
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.dll
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.dll
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.dll
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.dll
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.dll
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.xml
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.xml
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.xml
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.xml
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.xml
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.xml
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.xml
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.xml
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+C:\Users\redek\Downloads\Final CollegeManagementSystem (7-4-2016 , 5-11Pm)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.dll
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.dll
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.dll
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.dll
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.dll
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.dll
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.dll
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.dll
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.xml
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.xml
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.xml
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.xml
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.xml
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.xml
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.xml
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.xml
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+F:\Final CollegeManagementSystem (11-4-2016 , 11-24Am)\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.dll
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.dll
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.dll
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.dll
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.dll
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.dll
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.dll
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.dll
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.xml
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.xml
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.xml
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.xml
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.xml
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.xml
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.xml
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.xml
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+C:\Users\om\Downloads\CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.dll
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.dll
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.dll
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.dll
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.dll
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.dll
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.dll
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.dll
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.xml
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.Formatting.xml
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Helpers.xml
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.xml
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Http.WebHost.xml
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Mvc.xml
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.Razor.xml
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.xml
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+G:\Final 16 march 2016CollegeManagementSystem\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Net.Http.dll
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Net.Http.Formatting.dll
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Helpers.dll
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Http.dll
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Http.WebHost.dll
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Mvc.dll
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Razor.dll
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.dll
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Net.Http.xml
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Net.Http.Formatting.xml
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Helpers.xml
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Http.xml
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Http.WebHost.xml
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Mvc.xml
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Razor.xml
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.xml
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+G:\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\CollegeManagementSystem.dll.config
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Net.Http.dll
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Helpers.dll
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Mvc.dll
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Razor.dll
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.dll
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Net.Http.xml
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Helpers.xml
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Mvc.xml
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Razor.xml
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.xml
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+C:\Users\FAMILY\Desktop\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\CollegeManagementSystem.dll.config
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Net.Http.dll
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Helpers.dll
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Mvc.dll
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Razor.dll
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.dll
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Net.Http.xml
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Helpers.xml
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Mvc.xml
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.Razor.xml
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.xml
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+C:\Users\FAMILY\Desktop\PROJECT\Final 22 April 2016 CollegeManagementSystem - Copy\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystem.dll.config
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.dll
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Helpers.dll
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Mvc.dll
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Razor.dll
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.dll
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.xml
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Helpers.xml
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Mvc.xml
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Razor.xml
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.xml
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+C:\Users\FAMILY\Desktop\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystem.dll.config
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.dll
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.Formatting.dll
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Helpers.dll
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Http.dll
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Http.WebHost.dll
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Mvc.dll
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Razor.dll
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.dll
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.xml
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.Formatting.xml
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Helpers.xml
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Http.xml
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Http.WebHost.xml
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Mvc.xml
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Razor.xml
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.xml
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystem.dll.CodeAnalysisLog.xml
+C:\Users\sshridhar 42\Desktop\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystem.dll.lastcodeanalysissucceeded
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.dll
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Helpers.dll
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Mvc.dll
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Razor.dll
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.dll
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.xml
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Helpers.xml
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Mvc.xml
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Razor.xml
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.xml
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+C:\Users\sshridhar 42\Desktop\pro\vikas\vikas\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.dll
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Helpers.dll
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Mvc.dll
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Razor.dll
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.dll
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.xml
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Helpers.xml
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Mvc.xml
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.Razor.xml
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.xml
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+C:\Users\sshridhar 42\Desktop\pro\shridhar\shridhar\FINAL\PROJECT\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\CollegeManagementSystem.dll
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\CollegeManagementSystem.pdb
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\CollegeManagementSystemDE.dll
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\Newtonsoft.Json.dll
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\System.Net.Http.dll
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\System.Net.Http.WebRequest.dll
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\System.Web.Helpers.dll
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\System.Web.Mvc.dll
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\System.Web.Razor.dll
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\System.Web.WebPages.dll
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\CollegeManagementSystemDE.pdb
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\Newtonsoft.Json.xml
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\System.Net.Http.xml
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\System.Net.Http.WebRequest.xml
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\System.Web.Helpers.xml
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\System.Web.Mvc.xml
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\System.Web.Razor.xml
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\System.Web.WebPages.xml
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\obj\Debug\RdlCompile.cache
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\obj\Debug\RdlCompile.compiled
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.dll
+C:\Users\sshridhar 42\Documents\Visual Studio 2012\Projects\shridhar\CollegeManagementSystem\obj\Debug\CollegeManagementSystem.pdb

@@ -1,0 +1,200 @@
+﻿<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Management System</title>
+    
+
+    <script type="text/javascript" src="/TemplateScript/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/TemplateScript/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/TemplateScript/js/bootstrap.min.js"></script>
+    <link href="/TemplateScript/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <link href="/TemplateScript/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="/TemplateScript/css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link href="/TemplateScript/css/slider.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="~/TemplateScript/js/modernizr.custom.28468.js"></script>
+    <script type="text/javascript" src="~/TemplateScript/js/jquery.cslider.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('#da-slider').cslider({
+                autoplay: true,
+                bgincrement: 450
+            });
+
+        });
+    </script>
+    <!-- Owl Carousel Assets -->
+    <link href="~/TemplateScript/css/owl.carousel.css" rel="stylesheet">
+    <script src="~/TemplateScript/js/owl.carousel.js"></script>
+
+    @*<script>
+            $(document).ready(function () {
+
+                $("#owl-demo").owlCarousel({
+                    items: 4,
+                    lazyLoad: true,
+                    autoPlay: true,
+                    navigation: true,
+                    navigationText: ["", ""],
+                    rewindNav: false,
+                    scrollPerPage: false,
+                    pagination: false,
+                    paginationNumbers: false,
+                });
+
+            });
+        </script>*@
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+    <script>
+        $(document).ready(function () {
+            $("button").hide();
+            $("#ultoggle").hide();
+            $("button").click(function () {
+                $("#ultoggle").toggle();
+            });
+            var userid = "@Session["uid"]";
+            var UserName = "@Session["username"]";
+            var role = "@Session["Role"]";
+            var branchID = "@Session["BranchID"]";
+            var AcadamicYear = "@Session["AcadamicYear"]";
+
+
+            if (role == "Employee") {
+                $("button").show();
+                $("#divadmin").show();
+                $("#divstud").hide();
+                $("#divemp").hide();
+            }
+            else if (role == "Student") {
+                $("#divadmin").hide();
+                $("#divstud").show();
+                $("#divemp").hide();
+            }
+            else {
+                $("#divadmin").hide();
+                $("#divstud").hide();
+                $("#divemp").show();
+            }
+            $("#tog").hide();
+
+        });
+        function togg() {
+            $("#tog").toggle();
+        }
+    </script>
+
+
+</head>
+<body>
+    <div class="header_bg">
+        <div class="container">
+            <div class="row header">
+                <div class="logo navbar-left">
+                    <h1><a href="index.html">COLLEGE ERP SOLUTION </a></h1>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+
+        <div class="row h_menu" id="divadmin">
+
+            <nav class="navbar navbar-default navbar-left" role="navigation">
+               
+                <div class="collapse navbar-collapse" id="Admin">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/Admin/AdminHome">Home</a></li>
+                        <li><a href="/Admin/Attendanceemp">Attendance</a></li>
+                        <li><a href="/Admin/Register">Register</a></li>
+                        <li><a href="/Admin/StudentFees">Set Fee</a></li>
+                        <li><a href="/Admin/SetNotice">Set Notice</a></li>
+                        <li><a href="/Admin/SetPayroll">Set Payroll</a></li>
+                        <li><a href="/Admin/SetTimetable">Set Exam Timetable</a></li>
+                        <li><a href="/Admin/ClassTimeTable">Set Class Timetable</a></li>
+                        <li><a href="/Admin/SetResult">Set Result</a></li>
+                        <li>
+
+                            <a onmousedown="togg()"  style="height:60px;width:100px">Report</a>
+                            <div id="tog">
+                                <ul>
+                                    <li><a class="btn btn-success" href="/Report View/EmployeeAttendanceGraph.aspx">Employee Attendance </a></li>
+                                    <li><a class="btn btn-success" href="/Report View/StudentAttendanceGraph.aspx">Student Attendance</a></li>
+                                   <li><a class="btn btn-success" href="/Report View/StudentGraphFeePaid.aspx">Fee Detail Graph</a></li>
+                                    <li><a class="btn btn-success" href="/Report View/GraphOfStudentPassByDepartmentName.aspx">Exam Result Graph</a></li>
+                                    <li><a class="btn btn-success" href="/Report View/NewAddmissionPerYearGraph.aspx">New Student Added per year</a></li>
+                                    <li><a class="btn btn-success" href="/Report View/GetStudentDetailsByBranchAndYear.aspx">Student Detail</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><a href="/Admin/Logout">Log Out</a></li>
+                      
+                    </ul>
+                </div>
+            </nav>
+
+
+        </div>
+       
+        <div class="row h_menu" id="divstud">
+            <nav class="navbar navbar-default navbar-left" role="navigation">
+             
+                <div class="collapse navbar-collapse" id="Student1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/Admin/AdminHome">Home</a></li>
+                        <li><a href="/User/GetResult">Result</a></li>
+                        <li><a href="/User/UserHome">Details</a></li>
+                      @*  <li><a href="/User/FeeDetails">Fees Details</a></li>*@
+                        <li><a href="/User/StudentTimeTable">Exam Time Table</a></li>
+                        <li><a href="/User/ClassTimeTableView"> Class Timetable</a></li>
+                        <li><a href="/User/Notice">Notice Board</a></li>
+                        <li><a href="/Admin/Logout">Log Out</a></li>
+                    </ul>
+                </div>
+
+                <!-- start soc_icons -->
+            </nav>
+
+        </div>
+
+        <div class="row h_menu" id="divemp">
+            <nav class="navbar navbar-default navbar-left" role="navigation">
+                <div class="collapse navbar-collapse" id="Employee">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/Admin/AdminHome">Home</a></li>
+                        <li><a href="/User/Attendance">Attendance</a></li>
+                        <li><a href="/User/GetTimeTable">Exam Time Table</a></li>
+                        <li><a href="/User/ClassTimeTableView"> Class Timetable</a></li>
+                        <li><a href="/User/GetSalary">Salary</a></li>
+                        <li><a href="/User/Notice">Notice Board</a></li>
+                        <li><a href="~/Report%20View/EmployeePayemtSlip.aspx">Payemt Slip</a></li>
+                        <li><a href="~/Report%20View/StudentAttendanceGraph.aspx">Student Attendance Graph</a></li>
+                         <li><a href="/Admin/Logout">Log Out</a></li>
+                        @*<li><a href="/User/UserHome">Details</a></li>*@
+                    </ul>
+                </div>
+
+                <!-- start soc_icons -->
+            </nav>
+
+        </div>
+
+    </div>
+
+    <!-- end slider -->
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

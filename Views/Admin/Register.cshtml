@@ -1,0 +1,536 @@
+﻿@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2></h2>
+<script src="~/Main%20Script/js/boostrap-datepicker.js"></script>
+<script src="~/Main%20Script/js/bootstrap-datepicker.js"></script>
+@*<script src="~/Main%20Script/js/jquery.min.js"></script>
+
+<script src="~/Main%20Script/js/bootstrap.js"></script>*@
+<script>
+    $(document).ready(function () {
+        
+        
+        $("#txtqua").hide();
+        $("#ddlcast").hide();
+        var fileUplode = "";
+        var Qua = "";
+        $("#ddlexperience").hide();
+        $(".onlyNumberWithDecimal").keydown(function (e) {
+            // Allow: backspace, delete, tab, escape, enter and .
+            if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+                // Allow: Ctrl+A
+                (e.keyCode == 65 && e.ctrlKey === true) ||
+                // Allow: home, end, left, right
+                (e.keyCode >= 35 && e.keyCode <= 39)) {
+                // let it happen, don't do anything
+                return;
+            }
+            // Ensure that it is a number and stop the keypress
+            if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                e.preventDefault();
+            }
+        });
+        $("#ddlrole").change(function () {
+            var rolechk = $('#ddlrole option:selected').val();
+            if (rolechk == "Employee")
+            {
+                $("#ddlexperience").show();
+                $("#ddlcast").hide();
+                $("#txtqua").show();
+            }
+            else 
+            {
+                $("#ddlcast").show();
+                $("#txtqua").hide();
+                $("#ddlexperience").hide();
+            }
+            if (rolechk == "none") {
+                
+                $("#ddlcast").hide();
+                $("#txtqua").hide();
+            }
+        });
+
+        $("#alert").hide();
+        $("#datepicker").datepicker({
+            format: 'dd/mm/yyyy'
+        });
+        $.post("/Admin/GetBranch", function (Data) {
+            for (var i = 0; i < Data.length; i++) {
+                $('#ddlbranch').append($('<option></option>').val(Data[i].BranchID).html(Data[i].BranchName));
+            }
+        });
+
+        $("#btnreg").click(function () {
+         
+            var fname = $("#txtfirstname").val();
+           
+            var lname = $("#txtlastname").val();
+            Qua = $("#txtqua").val();
+            var gender = $('#ddlgender option:selected').val();
+           
+            var role = $('#ddlrole option:selected').val();
+
+            var experiance = $('#ddlexperience option:selected').val();
+                      
+            var Branch = $('#ddlbranch option:selected').val();
+            
+            var cast = $('#ddlcast option:selected').val();
+            
+            var year = $('#ddlyear option:selected').val();
+            
+            var admissiondate = $("#datepicker").val();
+            
+            var caddress = $("#txtcaddress").val();
+          
+            var paddress = $("#txtpaddress").val();
+            
+            var contact = $("#txtcontact").val();
+        
+            var email = $("#txtemail").val();
+
+            var loginname = $("#txtloginname").val();
+
+            var password = $("#txtpassword").val();
+
+            var cpassword = $("#txtconfirmpassword").val();
+
+            var gardname = $("#txtgname").val();
+
+            var gcontact = $("#txtgcontact").val();
+
+            var gaddress = $("#txtgaddress").val();
+
+            var Profession = $("#txtprofession").val();
+            
+            if (admissiondate == "") {
+                $("#alert").show();
+                $("#alert").html("PleaseSelect Date...............!");
+                $("#datepicker").focus();
+            }
+            else if (fname == "") {
+                $("#alert").show();
+                $("#alert").html("Please Enter First Name...............!");
+                $("#txtnotice").focus();
+            }
+            else if (lname == "") {
+                $("#alert").show();
+                $("#alert").html("Please Enter Last Name...............!");
+                $("#txtnotice").focus();
+            }
+            else if (role == "none")
+            {
+                $("#alert").show();
+                $("#alert").html("Please Select Role...............!");
+                $("#txtnotice").focus();
+            }
+            else if (gender == "none") {
+                $("#alert").show();
+                $("#alert").html("Please Select Gender...............!");
+                $("#txtnotice").focus();
+            }
+           
+            //else if (role == "Student")
+            //{
+            //    if (cast == "non")
+            //    {
+            //        $("#alert").show();
+            //        $("#alert").html("Please Select Cast...............!");
+            //        $("#txtnotice").focus();
+            //    }
+
+            //}
+            //else if(role=="Employee")
+            //{
+            //    if (Qua == "")
+            //    {
+            //        $("#alert").show();
+            //        $("#alert").html("Please Enter  qualification...............!");
+            //        $("#txtnotice").focus();
+            //    }
+            //    else
+            //    {
+            //        Qua = $("txtqua").val();
+            //    }
+
+            //}
+            else if (Branch == "none") {
+                $("#alert").show();
+                $("#alert").html("Please Select Branch ...............!");
+                $("#txtnotice").focus();
+            }
+            else if (year == "none") {
+                $("#alert").show();
+                $("#alert").html("Please Select Year ...............!");
+                $("#txtnotice").focus();
+            }
+            else if (caddress == "") {
+                $("#alert").show();
+                $("#alert").html("Please Enter Current Address...............!");
+                $("#txtnotice").focus();
+            }
+            else if (paddress == "") {
+                $("#alert").show();
+                $("#alert").html("Please Enter Permanent Address...............!");
+                $("#txtnotice").focus();
+            }
+            else if (paddress == "") {
+                $("#alert").show();
+                $("#alert").html("Please Enter Permanent Address...............!");
+                $("#txtnotice").focus();
+            }
+            else if (contact == "") {
+                $("#alert").show();
+                $("#alert").html("Please Enter Contact no...............!");
+                $("#txtnotice").focus();
+            }
+            else if (email == "") {
+                $("#alert").show();
+                $("#alert").html("Please Enter Email ID...............!");
+                $("#txtnotice").focus();
+            }
+            else if (!validateEmail(email)) {
+                $("#alert").show();
+                $("#alert").html("Please Enter Valid Email Address");
+                $("#email").focus();
+            }
+            else if (loginname == "") {
+                $("#alert").show();
+                $("#alert").html("Please Enter Login Name...............!");
+                $("#txtnotice").focus();
+            }
+            else if (password == "") {
+                $("#alert").show();
+                $("#alert").html("Please Enter Password...............!");
+                $("#txtnotice").focus();
+            }
+            else if (cpassword == "") {
+                $("#alert").show();
+                $("#alert").html("Please Enter Confirm Password...............!");
+                $("#txtnotice").focus();
+            }
+            else if (cpassword != password) {
+                $("#alert").show();
+                $("#alert").html("Password and re entered password does not match...............!");
+                $("#txtnotice").focus();
+            }
+            else if (gardname == "") {
+                $("#alert").show();
+                $("#alert").html("Please Enter Gardian Name...............!");
+                $("#txtnotice").focus();
+            }
+            else if (gcontact == "") {
+                $("#alert").show();
+                $("#alert").html("Please Enter Gardian Contact...............!");
+                $("#txtnotice").focus();
+            }
+            else if (gcontact == "") {
+                $("#alert").show();
+                $("#alert").html("Please Enter Gardian Contact...............!");
+                $("#txtnotice").focus();
+            }
+            else if (gaddress == "") {
+                $("#alert").show();
+                $("#alert").html("Please Enter Gardian Address...............!");
+                $("#txtnotice").focus();
+            }
+            else if (Profession == "") {
+                $("#alert").show();
+                $("#alert").html("Please Enter Gardian Profession...............!");
+                $("#txtnotice").focus();
+            }
+            else {
+               
+                fileUplode = $("#updval").val();
+                $.post("/Admin/RegisterUser", { 'fname1': fname, 'lname1': lname, 'branch': Branch, 'role': role, 'Acadamicyear': year, 'admissionDatee': admissiondate, 'caddress': caddress, 'paddress': paddress, 'contactno': contact, 'email': email, 'gender': gender, 'loginname': loginname, 'password': password, 'gname': gardname, 'gcontact': gcontact, 'gaddress': gaddress, 'gprofession': Profession, 'exp': experiance, 'cast': cast, 'fileuplode': fileUplode,'qua':Qua }, function (data) {
+                    Cleare();
+                    $("#alert").show();
+                        $("#alert").html(data);
+                        
+                    });
+            
+              
+            }
+        });
+    });
+    function Cleare()
+    {
+         $("#txtfirstname").val(" ");
+
+         $("#txtlastname").val(" ");
+
+         $('#ddlgender option:selected').val("none");
+
+         $('#ddlrole option:selected').val("none");
+
+        $('#ddlbranch option:selected').val("none");
+
+        $('#ddlyear option:selected').val("none");
+
+        $("#datepicker").val(" ");
+
+        $("#txtcaddress").val(" ");
+
+        $("#txtpaddress").val(" ");
+
+        $("#txtcontact").val(" ");
+
+        $("#txtemail").val(" ");
+
+        $("#txtloginname").val(" ");
+
+        $("#txtpassword").val(" ");
+
+        $("#txtconfirmpassword").val(" ");
+
+        $("#txtgname").val(" ");
+
+        $("#txtgcontact").val(" ");
+
+        $("#txtgaddress").val(" ");
+
+        $("#txtprofession").val(" ");
+    }
+
+    function validateEmail($email) {
+        var emailReg = /^([\w-\.]+@@([\w-]+\.)+[\w-]{2,4})?$/;
+        return emailReg.test($email);
+    }
+
+</script>
+<script>
+    $(document).ready(function () {
+        $("#fileup").change(function (e) {
+            var files = e.target.files;
+            if (files.length > 0) {
+                var data = new FormData();
+                data.append("fileupd", files[0]);
+                console.log(data);
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("fileupdmethod", "Admin")',
+                    contentType: false,
+                    processData: false,
+                    data: data,
+                    success: function (data) {
+                        fileUplode= $("#updval").val(data);
+                    },
+                    error: function () {
+                    }
+                });
+            }
+        });
+    });
+
+</script>
+<div class="container-fluid">
+<h2>Register</h2>
+    <div class="col-sm-offset-3 col-sm-5">
+        <div class="row">        
+            <div>
+                  <h3 style="color: #ff0000">User Details</h3>
+            </div>  
+     </div>
+    <div class="row">  
+        <br />      
+            <div>
+                 <input type="text" class="form-control" style="border:groove;height:40px" placeholder="First Name" id="txtfirstname"/> 
+            </div>  
+     </div>  
+    <br />
+    <div class="row">
+                <div>
+                   <input type="text" class="form-control" style="border:groove;height:40px" placeholder="Last Name" id="txtlastname"/> 
+                </div> 
+    </div>
+    <br />
+
+         <div class="row">
+        <div>
+          <select id="ddlrole" class=" form-control" style="border:groove;height:40px">
+            <option value='none'>Select Role</option>
+            <option value="Employee">Employee</option>
+            <option value="Student">Student</option>
+          </select>
+        </div>
+       </div>
+        <br />
+       
+           <div class="row">
+      
+          <select id="ddlgender" class=" form-control" style="border:groove;height:40px">
+            <option value='none'>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+       
+
+          <div class="row">
+        <div>
+        <input type="text" class="form-control" style="border:groove;height:40px" placeholder="Qualifiction" id="txtqua"/> 
+        </div>
+       </div>
+
+        <br />
+          <div class="row">
+        <div>
+          <select id="ddlcast" class=" form-control" style="border:groove;height:40px">
+            <option value='none'>Select Caste</option>
+            <option value="Open">Open</option>
+            <option value="OBC">OBC</option>
+              <option value="ST">ST</option>
+            <option value="SC">SC</option>
+               <option value="NT">NT</option>
+              <option value="SBC">SBC</option>
+
+          </select>
+        </div>
+       </div>
+<br />
+       
+    <div class="row">
+        <div>
+            <select id="ddlbranch" class="form-control" style="border:groove;height:40px">
+                <option value='none'>Select Branch</option>
+            </select>
+        </div>
+    </div>
+    <br />
+       
+        
+        <div class="row">
+        <div>
+          <select id="ddlexperience" class=" form-control" style="border:groove;height:40px">
+            <option value='0'>Select Experience</option>
+                           <option value="1">1 year</option>
+            <option value="2">2 year</option>
+               <option value="3">3 year</option>
+            <option value="4">4 year</option>
+               <option value="5">5 year</option>
+              <option value="Above">Above 5 year</option>
+              </select>
+        </div>
+       </div>
+<br />
+             <div class="row">
+        <div>
+         <select id="ddlyear" class=" form-control" style="border:groove;height:40px">
+            <option value='none'>Select Acadamic Year</option>
+            <option value="1st Year">1st Year</option>
+            <option value="2nd Year">2nd Year</option>
+             <option value="3rd Year">3rd Year</option>
+            <option value="4th Year">4th Year</option>
+        </select>
+        </div>
+     </div>
+       <br />
+    <div class="row">
+        <div>
+           <input type="text" readonly="readonly" class="form-control" style="border:groove;height:40px" placeholder="Select Admission Date" id="datepicker"/> 
+        </div>
+     </div>
+    <br />
+    <div class="row">
+         <div> 
+            <textarea class="form-control" style="border:groove;height:40px" placeholder="Current Address" id="txtcaddress"></textarea> 
+        </div>
+     </div>
+    <br />
+    <div class="row">
+         <div> 
+            <textarea class="form-control" style="border:groove;height:40px" placeholder="Permanent Address " id="txtpaddress"></textarea> 
+        </div>
+     </div>
+        <br />
+     <div class="row">
+        <div>
+           <input type="text" class="form-control onlyNumberWithDecimal" style="border:groove;height:40px" placeholder="Contact No" id="txtcontact" maxlength="10"/> 
+        </div>
+     </div>
+        <br />
+     <div class="row">
+        <div>
+           <input type="text" class="form-control" style="border:groove;height:40px" placeholder="Email Id" id="txtemail"/> 
+        </div>
+     </div>
+        <br />
+     <div class="row">
+        <div>
+           <input type="text" class="form-control " style="border:groove;height:40px" placeholder="Login Name" id="txtloginname"/> 
+        </div>
+     </div>
+        <br />
+    <div class="row">
+        <div>
+           <input type="password" class="form-control " style="border:groove;height:40px" placeholder="Password" id="txtpassword"/> 
+        </div>
+     </div>
+        <br />
+        <div class="row">
+        <div>
+           <input type="password" class="form-control " style="border:groove;height:40px" placeholder="Re Enter Password" id="txtconfirmpassword"/> 
+        </div>
+     </div>
+        <br />
+        <div class="row">
+        <div>
+            <label>Upload File</label>
+            <input type="hidden" id="updval" />
+           <input type="file" class="form-control " style="border:groove;height:40px" id="fileup"/> 
+            
+        </div>
+
+
+        <div class="row">  
+              <div>
+                  <h3 style="color: #ff0000">Guardians Details</h3>
+              </div>
+       </div>
+         <div class="row">  
+              <div>
+                 <input type="text" class="form-control" style="border:groove;height:40px" placeholder="Guardians Name" id="txtgname"/> 
+            </div>
+       </div>
+     <br />
+
+         <div class="row">  
+              <div>
+                 <input type="text" class="form-control onlyNumberWithDecimal" style="border:groove;height:40px" placeholder="Contact No" id="txtgcontact" maxlength="10"/> 
+            </div>
+       </div>
+     <br />
+
+         <div class="row">  
+              <div>
+                 <textarea class="form-control" style="border:groove;height:40px" placeholder="Permanent Address " id="txtgaddress"></textarea>
+            </div>
+       </div>
+     <br />
+
+        <div class="row">  
+              <div>
+                 <textarea class="form-control" style="border:groove;height:40px" placeholder="Profession " id="txtprofession"></textarea>
+            </div>
+       </div>
+     <br />
+
+         <div class="row">  
+              <div>
+                 <a class="fa-btn btn-1 btn-1e" id="btnreg">Submit</a>
+            </div>
+       </div>
+     <br />
+            <div class="row">
+                <div class="alert alert-success" id="alert"></div>
+            </div>
+            <br />
+
+        </div>
+</div>
+    <br />
+
+</div>

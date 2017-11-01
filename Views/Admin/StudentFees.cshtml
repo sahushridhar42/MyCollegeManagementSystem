@@ -1,0 +1,287 @@
+﻿@{
+    ViewBag.Title = "StudentFees";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2></h2>
+
+<script>
+    $(document).ready(function () {
+        var total=0;
+        var count;
+        $("#alert").hide();
+      
+        $("#h1").hide();
+        var branch;
+        var acadamicyear;
+        var cast;
+        var examinationid;
+        $.post("/Admin/GetBranch", function (Data) {
+            for (var i = 0; i < Data.length; i++) {
+                $('#ddlbranch').append($('<option></option>').val(Data[i].BranchID).html(Data[i].BranchName));
+            }
+        });
+
+        $.post("/Admin/GetExamination", function (Data) {
+            for (var i = 0; i < Data.length; i++) {
+                $('#ddlexamination').append($('<option></option>').val(Data[i].ExaminationID).html(Data[i].Examination));
+            }
+        });
+        $("#ddlcast").change(function ()
+        {
+            cast = $('#ddlcast option:selected').val();
+            acadamicyear = $('#ddlacadamicyear option:selected').val();
+            branch = $('#ddlbranch option:selected').val();
+
+            if (branch == "none")
+            {
+                $("#alert").show();
+                $("#alert").html("Please Select Branch ...............!");
+                $("#txtnotice").focus();
+            }
+           else if (acadamicyear == "none") {
+                $("#alert").show();
+                $("#alert").html("Please Select Acadamic Year ...............!");
+                $("#txtnotice").focus();
+            }
+           else if (cast == "none") {
+                $("#alert").show();
+                $("#alert").html("Please Select Cast ...............!");
+                $("#txtnotice").focus();
+            }
+            else
+            {
+                
+                $.post("/Admin/GetUserByAcadamicYearandBranch1", { 'branch': branch, 'AcadamicYear': acadamicyear,'cast':cast }, function (Data) {
+                    for (var i = 0; i < Data.length; i++) {
+                        $('#ddlstudent').append($('<option></option>').val(Data[i].UserID).html(Data[i].FullName));
+                    }
+                    
+                });
+               
+
+
+                $.post("/Admin/GetCourseAmount", { 'branchID': branch, 'acadmicYear': acadamicyear }, function (Data)
+                {
+                    for (var i = 0; i < Data.length; i++) {
+                      
+                        $("#txtFees").val(Data[i].Amount);
+                        
+                        $("#txtpaid").val(Data[i].Amount);
+                        $("#lblid").html(Data[i].FeeMasterID);
+                    }
+                });
+                $('#ddlstudent').empty();
+
+            }
+        });
+
+        //$("#ddlexamination").change(function () {
+
+        //    examinationid = $('#ddlexamination option:selected').val();
+        //    $("#h1").show();
+        //   $("#tblsubject").show();
+        //    $("tbody").empty();
+        //    $.post("/Admin/GetExaminationSubjectbyAcadamicYearBranchIDExaminationID", { 'branch': branch, 'acadamicyear': acadamicyear, 'examinationid': examinationid }, function (Data) {
+        //       // alert("call");
+        //        count = Data.length;
+        //        for (var i = 0; i < Data.length; i++) {
+                   
+        //            var row = "<tr><td><lable id='lblsub"+i+"'>" + Data[i].Subject + "</lable></td><td><input type='text' class='form-control' id='txt"+i+"' style='border:groove'/></td><td><lable id='lblmark"+i+"'>" + Data[i].Marks + "</lable></td></tr>"
+        //            $("tbody").append(row);            
+        //        }
+               
+        //    });
+        //});
+
+       
+
+        $("#btnpay").click(function ()
+        {
+           
+            var paidAmt,Amount,remAmount;
+            paidAmt = $("#txtpaid").val();
+            Amount = $("#txtFees").val();
+            var userid = $('#ddlstudent option:selected').val();
+            if (Amount == "") {
+                $("#alert").show();
+                $("#alert").html("Please Select Acdmic Year Amount...............!");
+            }
+
+            else if (paidAmt == "") {
+                $("#alert").show();
+                $("#alert").html("Please Select Acdmic Year Amount..............!");
+
+            }
+            else if (paidAmt > Amount) {
+                $("#alert").show();
+                $("#alert").html("Paid Amount Must less then fees Amount...............!");
+            }
+            else {
+
+
+                $.post("/Admin/InsertStudentFees", { 'UserID': userid, 'FeeMasterID': $("#lblid").html(), 'PaidAmount': paidAmt }, function (Data) {
+                    if (Data > 0) {
+                        $("#alert").show();
+                        $("#alert").html("Record Saved...............!");
+                        $("#txtpaid").val("");
+                        $("#txtFees").val("");
+                        $("#lblid").html("0");
+                    }
+                    else {
+                        $("#alert").show();
+                        $("#alert").html("Record Not Paid Amount...............!");
+                    }
+                });
+            }
+        });
+
+
+       
+    });
+</script>
+
+<div class="container">
+    <center>
+    <h2> Set Student Fees</h2>
+        </center>
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-sm-1">
+             </div>
+        <div class="col-sm-2">
+            <h5>Branch</h5>
+            </div>
+        <div class="col-sm-6">
+            <select id="ddlbranch" class="form-control" style="border:groove;height:40px">
+                <option value='none'>Select Branch</option>
+            </select>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-1">
+             </div>
+        <div class="col-sm-2">
+            <h5>Acadamic Year</h5>
+            </div>
+        <div class="col-sm-6">
+            <select id="ddlacadamicyear" class="form-control" style="border:groove;height:40px">
+                <option value='none'>Select Acadmic Year</option>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>4th Year</option>
+            </select>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="col-sm-1">
+             </div>
+        <div class="col-sm-2">
+            <h5>Select Cast</h5>
+            </div>
+        <div class="col-sm-6">
+           <select id="ddlcast" class=" form-control" style="border:groove;height:40px">
+            <option value='none'>Select Cast</option>
+            <option value="Open">Open</option>
+            <option value="OBC">OBC</option>
+              <option value="ST">ST</option>
+            <option value="SC">SC</option>
+               <option value="NT">NT</option>
+              <option value="SBC">SBC</option>
+
+          </select>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-1">
+             </div>
+        <div class="col-sm-2">
+            <h5>Student :</h5>
+            </div>
+        <div class="col-sm-6">
+            <select id="ddlstudent" class="form-control" style="border:groove;height:40px">
+                <option value='none'>Select Student</option>
+            </select>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-1">
+             </div>
+        <div class="col-sm-2">
+           
+        <div class="col-sm-6">
+      
+        </div>
+    </div>
+    <br />
+     <center>
+    <h2 id="h1"> Fill Marks </h2>
+        </center>
+    <br />
+
+      <div class="row">
+          <div class="col-sm-1">
+             </div>
+        <div class="col-sm-2">
+          
+            </div>
+          <span></span>
+        <div class="col-sm-6">
+          
+        </div>
+    </div>
+    </div>
+
+    <!-- Payment Div --->
+      <div class="row">
+          
+               <div class="col-sm-1">
+               
+          </div>
+        <div class="col-sm-2">
+         <h5> Acadmic Fees: </h5>
+            <label id="lblid">0</label>
+            </div>
+          <div class="col-sm-2">
+               <span><input type="text" class="form-control" id="txtFees" style="border-bottom-color:red;height:40px" readonly="readonly"></span>
+          </div>
+        
+          <div class="col-sm-2">
+         <h5> Paid Amount: </h5>
+            </div>
+          <div class="col-sm-2">
+               <span><input type="text" class="form-control" id="txtpaid" style="border-bottom-color:red;height:40px" readonly="readonly" ></span>
+          </div>
+        <div class="col-sm-2">
+                 <a class="fa-btn btn-1 btn-1e" id="btnpay">Save</a>
+            </div>
+          <div class="col-sm-1">
+               
+          </div>
+          
+          
+            <span></span>
+        </div>
+
+   <!--End Payment Div --->
+        <div class="row">
+          <div class="col-sm-1">
+             </div>
+        <div class="col-sm-2">
+          
+            </div>
+          <span></span>
+        <div class="col-sm-6">
+           
+        </div>
+    </div>  
+          <div class="alert alert-success" id="alert"></div>
+    </div>
+   

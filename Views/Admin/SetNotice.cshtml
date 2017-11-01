@@ -1,0 +1,189 @@
+﻿@{
+    ViewBag.Title = "SetNotice";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2></h2>
+<script src="~/Main%20Script/js/boostrap-datepicker.js"></script>
+<script src="~/Main%20Script/js/bootstrap-datepicker.js"></script>
+<script src="~/Main%20Script/js/bootstrap.js"></script>
+<script>
+    $(document).ready(function () {
+       
+        $("#alert").hide();
+        $("#datepicker").datepicker({
+            format: 'dd/mm/yyyy'
+        });
+        //$.post("/Admin/GetDate", function (data) {
+        //    $("#datepicker").val(data);
+        //});    
+        $.post("/Admin/GetBranch", function (Data) {
+            for (var i = 0; i < Data.length; i++) {
+                $('#ddlbranch').append($('<option></option>').val(Data[i].BranchID).html(Data[i].BranchName));
+            }
+        });
+
+        $("#btnreg").click(function () {
+            $("#alert").hide();
+            var date = $("#datepicker").val();
+            var notice = $("#txtnotice").val();
+            var role = $('#ddlrole option:selected').val();           
+            var Branch = $('#ddlbranch option:selected').val();
+            var year = $('#ddlyear option:selected').val();
+            if (date == null || date == "") {
+                $("#alert").show();
+                $("#alert").html("PleaseSelect Date...............!");
+                $("#datepicker").focus();
+            }
+            else if (notice == " ") {
+                $("#alert").show();
+                $("#alert").html("Please Enter Notice...............!");
+                $("#txtnotice").focus();
+            }
+            else if (role == "none") {        
+                $("#alert").show();
+                $("#alert").html("Please Select Role...............!");
+                $("#txtnotice").focus();
+            }
+            else if (Branch == "none") {
+                $("#alert").show();
+                $("#alert").html("Please Select Branch ...............!");
+                $("#txtnotice").focus();
+            }
+            //else {
+            //    if (Branch == "All") {
+            //        $.post("/Admin/InsertNotice", { 'date': date, 'notice': notice, 'role': role, 'branch': 0, 'year': year }, function (data) {
+            //            $("#alert").show();
+            //            $("#alert").html(data);
+            //            Cleare();
+            //        });
+
+            //    }
+                else {
+                    $.post("/Admin/InsertNotice", { 'date': date, 'notice': notice, 'role': role, 'branch': Branch, 'year': year }, function (data) {
+                        $("#alert").show();
+                        $("#alert").html(data);
+                        Cleare();
+                    });
+                }
+            //}
+        });
+    });
+    function Cleare()
+    {
+        $("#datepicker").val(" ");
+        $("#txtnotice").val(" ");
+        $("#ddlrole").val("none");
+        $('#ddlbranch').val("none");
+        $('#ddlyear').val("none");
+    }
+
+</script>
+
+<div class="container">
+    <center>
+    <h2> Set Notice</h2>
+        </center>
+    <br />
+    <br />
+    <div class="row">
+         <div class="col-sm-1">
+             </div>
+        <div class="col-sm-1">
+            <h5>Date</h5>
+            </div>
+        <div class="col-sm-6">
+           <input type="text" readonly="readonly" class="form-control datepicker" style="border:groove;height:40px" id="datepicker"/> 
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-1">
+             </div>
+        <div class="col-sm-1">
+            <h5>Notice</h5>
+            </div>
+        <div class="col-sm-6"> 
+            <textarea class="form-control" style="border:groove;height:40px" placeholder="Notice" id="txtnotice"></textarea> 
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-1">
+             </div>
+         <div class="col-sm-1">
+            <h5>Role
+            </h5>
+            </div>
+        <div class="col-sm-6">         
+            <span>
+        <select id="ddlrole" class=" form-control" style="border:groove;height:40px">
+            <option value='none'>Select role</option>
+            <option value="Both">Both</option>
+            <option value="Employee">Employee</option>
+            <option value="Student">Student</option>
+        </select>
+                </span>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-1">
+             </div>
+        <div class="col-sm-1">
+            <h5>Branch</h5>
+            </div>
+        <div class="col-sm-6">
+            <select id="ddlbranch" class="form-control" style="border:groove;height:40px">
+                <option value='none'>Select Branch</option>
+            </select>
+        </div>
+    </div>
+    <br />
+     <div class="row">
+        <div class="col-sm-1">
+             </div>
+         <div class="col-sm-1">
+            <h5> Year
+            </h5>
+            </div>
+        <div class="col-sm-6">         
+            <span>
+        <select id="ddlyear" class=" form-control" style="border:groove;height:40px">
+            <option value='none'>Select Year</option>
+            <option>For all</option>
+            <option value="1st Year">1st Year</option>
+            <option value="2nd Year">2nd Year</option>
+             <option value="3rd Year">3rd Year</option>
+            <option value="4th Year">4th Year</option>
+        </select>
+                </span>
+        </div>
+    </div>
+    <br />
+      <div class="row">
+          <div class="col-sm-1">
+             </div>
+        <div class="col-sm-1">
+          
+            </div>
+          <span></span>
+        <div class="col-sm-6">
+             <a class="fa-btn btn-1 btn-1e" id="btnreg">Submit</a>
+        </div>
+    </div>
+    </div>
+      <div class="row">
+          <div class="col-sm-1">
+             </div>
+        <div class="col-sm-1">
+          
+            </div>
+          <span></span>
+        <div class="col-sm-6">
+          <div class="alert alert-success" id="alert"></div>
+    </div>
+    
+
+</div>
+

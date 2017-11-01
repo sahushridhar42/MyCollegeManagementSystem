@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Responsive Login Form</title>
+    <link href="~/Login%20View%20Script/css/style.css" rel="stylesheet" />
+    <script src="~/Login%20View%20Script/js/index.js"></script>
+<script src="~/Main%20Script/js/jquery.min.js"></script>
+    <script src="~/Main%20Script/js/jquery.flexnav.min.js"></script>
+    <script src="~/Main%20Script/js/jquery-1.11.0.min.js"></script>
+    <script src="~/Main%20Script/js/jqueryconfirm.js"></script>
+
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+     <script>
+         $(document).ready(function () {
+             var id;
+             $("#btnlogin").click(function () {
+                 var username = $("#txtusername").val();
+                 var password = $("#password").val();
+                 $.post("/Admin/Login", { 'Loginname': username, 'password': password }, function (data) {
+                     if (data > 0)
+                     {
+                         window.location.href = "/Admin/AdminHome";
+                     }
+                     else
+                     {
+                         alert("User Name and Password Combination is Incorrect..................!");
+                     }
+                 });
+             });
+
+             $("#btnforget").click(function () {
+                 var loginname = $("#txtusername").val();
+                 $.post("/Admin/GetPassword", { 'loginname': loginname }, function (data) {
+                     alert(data);
+                 });
+             });
+
+             //$("#btnnext").click(function () {
+             //    var loginname = $("#txtusernamem").val();
+             //    $.post("/Admin/VarifyUserName", { 'loginname': loginname }, function (data) {
+             //         id = data;
+             //        if (data > 0) {
+             //            $("#myModal").hide();
+             //            $("#myModal1").modal('show');
+             //        }
+             //        else {
+             //            alert("UserName Does not match......!")
+             //        }
+             //    });
+             //});
+             //$("#btnchange").click(function () {
+             //    var pass = $("#txtpass").val();
+             //    if (pass == "") {
+             //        alert("Please Enter new Password................!")
+             //    }
+             //    else {
+             //        $.post("/Admin/ChangePassword", { 'password': pass, 'userid': id }, function (data) {
+             //            if (data > 0) {
+             //                alert("Your Password is Change successfully..................!");
+             //                window.location.href = "/Admin/index";
+             //            }
+             //            else {
+             //                alert("Password change faild..........!")
+             //            }
+
+             //        });
+             //    }
+             //});
+
+         });
+    </script> 
+  </head>
+  <body>
+<div class="login">
+  <div class="login-header">
+    <h1>Login</h1>
+  </div>
+  <div  style ="margin-bottom:30px;"class="login-form">
+    <h3>Username:</h3>
+    <input type="text" id="txtusername" placeholder="Username"/><br>
+    <h3>Password:</h3>
+    <input type="password" id="password" placeholder="Password"/>
+    <br>
+      <br>
+        <input type="submit" value="Login" id="btnlogin" class="login-button"/>
+      <br>
+      <br>
+
+      <a href="#" id="btnforget" style="color:red" data-toggle="modal" data-target="#myModal">Forget Password ?</a>
+  </div>
+    </div>
+  </body>
+</html>

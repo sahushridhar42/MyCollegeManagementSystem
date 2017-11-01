@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42F0A4DE-92FF-481D-8445-80ABF2AB0E48}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CollegeManagementSystem</RootNamespace>
+    <AssemblyName>CollegeManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CollegeMgmSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CollegeMgmSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report View\Attendance.aspx.cs">
+      <DependentUpon>Attendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report View\Attendance.aspx.designer.cs">
+      <DependentUpon>Attendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report View\EmployeeAttendanceGraph.aspx.cs">
+      <DependentUpon>EmployeeAttendanceGraph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report View\EmployeeAttendanceGraph.aspx.designer.cs">
+      <DependentUpon>EmployeeAttendanceGraph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report View\EmployeePayemtSlip.aspx.cs">
+      <DependentUpon>EmployeePayemtSlip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report View\EmployeePayemtSlip.aspx.designer.cs">
+      <DependentUpon>EmployeePayemtSlip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report View\GetFeePaidUnpaidReport.aspx.cs">
+      <DependentUpon>GetFeePaidUnpaidReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report View\GetFeePaidUnpaidReport.aspx.designer.cs">
+      <DependentUpon>GetFeePaidUnpaidReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report View\GetStudentDetailsByBranchAndYear.aspx.cs">
+      <DependentUpon>GetStudentDetailsByBranchAndYear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report View\GetStudentDetailsByBranchAndYear.aspx.designer.cs">
+      <DependentUpon>GetStudentDetailsByBranchAndYear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report View\GraphAttendanceById.aspx.cs">
+      <DependentUpon>GraphAttendanceById.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report View\GraphAttendanceById.aspx.designer.cs">
+      <DependentUpon>GraphAttendanceById.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report View\GraphOfStudentPassByDepartmentName.aspx.cs">
+      <DependentUpon>GraphOfStudentPassByDepartmentName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report View\GraphOfStudentPassByDepartmentName.aspx.designer.cs">
+      <DependentUpon>GraphOfStudentPassByDepartmentName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report View\NewAddmissionPerYearGraph.aspx.cs">
+      <DependentUpon>NewAddmissionPerYearGraph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report View\NewAddmissionPerYearGraph.aspx.designer.cs">
+      <DependentUpon>NewAddmissionPerYearGraph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report View\NewStudentPerYear.aspx.cs">
+      <DependentUpon>NewStudentPerYear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report View\NewStudentPerYear.aspx.designer.cs">
+      <DependentUpon>NewStudentPerYear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report View\StudentAttendanceGraph.aspx.cs">
+      <DependentUpon>StudentAttendanceGraph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report View\StudentAttendanceGraph.aspx.designer.cs">
+      <DependentUpon>StudentAttendanceGraph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report View\StudentGraphFeePaid.aspx.cs">
+      <DependentUpon>StudentGraphFeePaid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report View\StudentGraphFeePaid.aspx.designer.cs">
+      <DependentUpon>StudentGraphFeePaid.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Login View Script\css\style.css" />
+    <Content Include="Login View Script\js\index.js" />
+    <Content Include="Main Script\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="Main Script\css\bootstrap-responsive.css" />
+    <Content Include="Main Script\css\bootstrap-responsive.min.css" />
+    <Content Include="Main Script\css\bootstrap.css" />
+    <Content Include="Main Script\css\bootstrap.min.css" />
+    <Content Include="Main Script\css\datepicker.css" />
+    <Content Include="Main Script\css\flexnav.css" />
+    <Content Include="Main Script\css\jqueryconfirm.css" />
+    <Content Include="Main Script\css\main.css" />
+    <Content Include="Main Script\css\normalize.css" />
+    <Content Include="Main Script\css\responsive.css" />
+    <Content Include="Main Script\css\style.css" />
+    <Content Include="Main Script\css\style2.css" />
+    <Content Include="Main Script\css\styles1.css" />
+    <Content Include="Main Script\js\boostrap-datepicker.js" />
+    <Content Include="Main Script\js\bootstrap-datepicker.js" />
+    <Content Include="Main Script\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="Main Script\js\bootstrap.confirm.js" />
+    <Content Include="Main Script\js\bootstrap.js" />
+    <Content Include="Main Script\js\bootstrap.min.js" />
+    <Content Include="Main Script\js\jquery-1.11.0.min.js" />
+    <Content Include="Main Script\js\jquery.flexnav.min.js" />
+    <Content Include="Main Script\js\jquery.min.js" />
+    <Content Include="Main Script\js\jqueryconfirm.js" />
+    <Content Include="Main Script\js\modernizr-2.6.2.min.js" />
+    <Content Include="Main Script\js\plusone.js" />
+    <Content Include="Main Script\js\script.js" />
+    <Content Include="Main Script\js\validation.js" />
+    <Content Include="Report View\Attendance.aspx" />
+    <Content Include="Report View\EmployeeAttendanceGraph.aspx" />
+    <Content Include="Report View\EmployeePayemtSlip.aspx" />
+    <Content Include="Report View\GetFeePaidUnpaidReport.aspx" />
+    <Content Include="Report View\GetStudentDetailsByBranchAndYear.aspx" />
+    <Content Include="Report View\GraphAttendanceById.aspx" />
+    <Content Include="Report View\GraphOfStudentPassByDepartmentName.aspx" />
+    <Content Include="Report View\NewAddmissionPerYearGraph.aspx" />
+    <Content Include="Report View\NewStudentPerYear.aspx" />
+    <Content Include="Report View\StudentAttendanceGraph.aspx" />
+    <Content Include="Report View\StudentGraphFeePaid.aspx" />
+    <Content Include="TemplateScript\css\bootstrap.css" />
+    <Content Include="TemplateScript\css\bootstrap.min.css" />
+    <Content Include="TemplateScript\css\mynew.css" />
+    <Content Include="TemplateScript\css\owl.carousel.css" />
+    <Content Include="TemplateScript\css\slider.css" />
+    <Content Include="TemplateScript\css\style.css" />
+    <Content Include="TemplateScript\fonts\css\font-awesome.css" />
+    <Content Include="TemplateScript\fonts\css\font-awesome.min.css" />
+    <Content Include="TemplateScript\fonts\fonts\fontawesome-webfont.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="TemplateScript\images\ads_pic.jpg" />
+    <Content Include="TemplateScript\images\blog_pic1.jpg" />
+    <Content Include="TemplateScript\images\blog_pic2.jpg" />
+    <Content Include="TemplateScript\images\c-arrows.png" />
+    <Content Include="TemplateScript\images\c1.jpg" />
+    <Content Include="TemplateScript\images\c2.jpg" />
+    <Content Include="TemplateScript\images\c3.jpg" />
+    <Content Include="TemplateScript\images\c4.jpg" />
+    <Content Include="TemplateScript\images\det_pic.jpg" />
+    <Content Include="TemplateScript\images\pic1.jpg" />
+    <Content Include="TemplateScript\images\slider_bg.jpg" />
+    <Content Include="TemplateScript\images\social-icons.png" />
+    <Content Include="TemplateScript\js\bootstrap.js" />
+    <Content Include="TemplateScript\js\bootstrap.min.js" />
+    <Content Include="TemplateScript\js\jquery.cslider.js" />
+    <Content Include="TemplateScript\js\jquery.min.js" />
+    <Content Include="TemplateScript\js\modernizr.custom.28468.js" />
+    <Content Include="TemplateScript\js\owl.carousel.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="images\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TemplateScript\fonts\fonts\fontawesome-webfont.eot" />
+    <Content Include="TemplateScript\fonts\fonts\fontawesome-webfont.ttf" />
+    <Content Include="TemplateScript\fonts\fonts\fontawesome-webfont.woff" />
+    <Content Include="TemplateScript\fonts\fonts\FontAwesome.otf" />
+    <Content Include="TemplateScript\fonts\less\bordered-pulled.less" />
+    <Content Include="TemplateScript\fonts\less\core.less" />
+    <Content Include="TemplateScript\fonts\less\fixed-width.less" />
+    <Content Include="TemplateScript\fonts\less\font-awesome.less" />
+    <Content Include="TemplateScript\fonts\less\icons.less" />
+    <Content Include="TemplateScript\fonts\less\larger.less" />
+    <Content Include="TemplateScript\fonts\less\list.less" />
+    <Content Include="TemplateScript\fonts\less\mixins.less" />
+    <Content Include="TemplateScript\fonts\less\path.less" />
+    <Content Include="TemplateScript\fonts\less\rotated-flipped.less" />
+    <Content Include="TemplateScript\fonts\less\spinning.less" />
+    <Content Include="TemplateScript\fonts\less\stacked.less" />
+    <Content Include="TemplateScript\fonts\less\variables.less" />
+    <Content Include="TemplateScript\fonts\OpenSans-Regular-webfont.ttf" />
+    <Content Include="TemplateScript\fonts\scss\font-awesome.scss" />
+    <Content Include="TemplateScript\fonts\scss\_bordered-pulled.scss" />
+    <Content Include="TemplateScript\fonts\scss\_core.scss" />
+    <Content Include="TemplateScript\fonts\scss\_fixed-width.scss" />
+    <Content Include="TemplateScript\fonts\scss\_icons.scss" />
+    <Content Include="TemplateScript\fonts\scss\_larger.scss" />
+    <Content Include="TemplateScript\fonts\scss\_list.scss" />
+    <Content Include="TemplateScript\fonts\scss\_mixins.scss" />
+    <Content Include="TemplateScript\fonts\scss\_path.scss" />
+    <Content Include="TemplateScript\fonts\scss\_rotated-flipped.scss" />
+    <Content Include="TemplateScript\fonts\scss\_spinning.scss" />
+    <Content Include="TemplateScript\fonts\scss\_stacked.scss" />
+    <Content Include="TemplateScript\fonts\scss\_variables.scss" />
+    <Content Include="TemplateScript\fonts\texgyreadventor-regular-webfont.ttf" />
+    <Content Include="TemplateScript\images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\AdminHome.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CollegeManagementSystemDE\CollegeManagementSystemDE.csproj">
+      <Project>{feeb5751-1d1a-4ce1-b186-9a67e9000f52}</Project>
+      <Name>CollegeManagementSystemDE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\SetNotice.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\Register.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\SetResult.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\SetTimetable.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User\UserHome.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User\GetResult.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User\GetTimeTable.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User\GetSalary.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\SetPayroll.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User\FeeDetails.cshtml" />
+    <Content Include="Views\User\Notice.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\StudentFees.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\ReportFeePaidGraphStudent.rdlc" />
+    <EmbeddedResource Include="Reports\ReportGetStudentPassResultGraph.rdlc" />
+    <EmbeddedResource Include="Reports\ReportNewStudentAddedPerYear.rdlc" />
+    <EmbeddedResource Include="Reports\ReportSalary.rdlc" />
+    <EmbeddedResource Include="Reports\RptAttendance.rdlc" />
+    <EmbeddedResource Include="Reports\rptEmployeeAttendanceGraph.rdlc" />
+    <EmbeddedResource Include="Reports\RptFeePaidUnpaid.rdlc" />
+    <EmbeddedResource Include="Reports\RptGetStudentDetailsByBranchandAcadamicYear.rdlc" />
+    <EmbeddedResource Include="Reports\RptNewStudentPerYear.rdlc" />
+    <EmbeddedResource Include="Reports\rptStudentAttandanceGraph.rdlc" />
+    <EmbeddedResource Include="Reports\rptStudentAttendanceGraphReportByID.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CollegeMgmSystemDataSet.xsc">
+      <DependentUpon>CollegeMgmSystemDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="CollegeMgmSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CollegeMgmSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="CollegeMgmSystemDataSet.xss">
+      <DependentUpon>CollegeMgmSystemDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\Admin\Attendanceemp.cshtml" />
+    <Content Include="Views\User\Attendance.cshtml" />
+    <Content Include="Views\Admin\ClassTimeTable.cshtml" />
+    <Content Include="Views\User\ClassTimeTableView.cshtml" />
+    <Content Include="Views\User\StudentTimeTable.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3347/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "GetTimeTable";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2></h2>
+
+<script>
+    $(document).ready(function () {
+        var bachID;
+        var Acadamicyear;       
+        var userid = "@Session["uid"]";
+       // alert(userid);
+        $.post("/User/GetAllUser", { 'userid': userid }, function (Data) {
+            for (var j = 0; j < Data.length; j++) {
+                bachID = Data[j].BranchID;
+                Acadamicyear = Data[j].AcadamicYear;
+            }
+            $.post("/User/GetTimeTable1s", { 'AcadamicYear': Acadamicyear, 'bach': bachID }, function (Data) {
+                if (Data == "null") {
+                    var str = "Record not Available";
+                    var row = "<tr><td><h2> " + str + "  </h2></td>"
+                    $("#tbody").append(row);
+                }
+                else {
+                    for (var i = 0; i < Data.length; i++) {
+                        var row = "<tr><td><label>" + Data[i].Examination + " </label></td>" +
+                                  "<td><label>" + Data[i].BachName + " </label></td>" +
+                                   "<td><label>" + Data[i].Subject + " </label></td>" +
+                                   "<td><label>" + Data[i].Date + " </label></td>" +
+                                   "<td><label>" + Data[i].Time + " </label></td></tr>"
+
+                        $("#tbody").append(row);
+                    }
+                }
+            });
+        });
+
+       
+    });
+</script>
+
+<div class="container">
+    <center>
+    <h2>Exam Time Table</h2>
+        </center>
+    <br />
+    <br />
+     <center>
+         <div id="contact-form-cont" class="one_half">
+              <table class="table col-sm-4 responsive" style="border-collapse: collapse; color:black;width: 100%;" >
+                  <thead style="background-color: #4CAF50;font-size:20px">
+                      <tr>
+                          <td>Examination</td>
+                          <td>Batch</td>
+                          <td>Subject</td>
+                          <td>Date</td>
+                          <td>Time</td>
+                      </tr>
+                  </thead>
+                  <tbody id="tbody"></tbody>
+              </table>
+             </div>
+             </center>
+</div>

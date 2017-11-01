@@ -1,0 +1,426 @@
+﻿@{
+    ViewBag.Title = "SetPayroll";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2></h2>
+
+
+<script>
+    $(document).ready(function ()
+    {
+        var Exp;
+
+        var Atten;
+        var perdayamt;
+        $("#btnsave").hide();
+        var BaranchID, AcadmicID;
+
+        $(".onlyNumberWithDecimal").keydown(function (e) {
+            // Allow: backspace, delete, tab, escape, enter and .
+            if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+                // Allow: Ctrl+A
+                (e.keyCode == 65 && e.ctrlKey === true) ||
+                // Allow: home, end, left, right
+                (e.keyCode >= 35 && e.keyCode <= 39)) {
+                // let it happen, don't do anything
+                return;
+            }
+            // Ensure that it is a number and stop the keypress
+            if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                e.preventDefault();
+            }
+        });
+
+        $("#ddlemployee").change(function () {
+            
+            var userid = $('#ddlemployee option:selected').val();
+            $.post("/Admin/GetExperianceByID", { 'userid': userid }, function (Data) {
+                Exp = Data;
+                $("#lblexperiance").html(Data + " Year");
+
+                $.post("/Admin/GetAttendanceByID", { 'userid': userid }, function (Data) {
+                    Atten = Data;
+                    $("#lblattendance").html(Data + " Days");
+
+                    $.post("/Admin/GetBasicSalary", { 'exp': Exp, 'att': Atten, 'amtperday': perdayamt }, function (Data) {
+                        $("#txtamount").val(Data);
+                        $("#basic").html(Data);
+                    });
+                });
+            });
+         
+
+           
+        });
+
+        //$("#ddlAcadmicYear").change(function () {
+        //   var br = $('#ddlBarnch option:selected').val();
+            
+          
+           
+        //});
+        $("#ddlBarnch").change(function () {
+            var br = $('#ddlBarnch option:selected').val();
+           // var acy = $('#ddlAcadmicYear option:selected').val();
+            $.post("/Admin/GetAmount", { 'branch': br }, function (Data) {
+                if (Data != null) {
+                    perdayamt = Data;
+                    //$("#txtamount").val(Data); 
+                    $("#lbldailyamt").html(Data + " Rs");
+                }
+                else {
+                    alert("Payment amount is not available.....................!");
+                }
+
+            });
+            $.post("/Admin/GetEmp", { 'branch': br}, function (Data) {
+
+                for (var i = 0; i < Data.length; i++) {
+                    $('#ddlemployee').append($('<option></option>').val(Data[i].UserID).html(Data[i].FullName));
+                }
+            });
+        });
+
+
+        $.post("/Admin/GetBranch", function (Data) {
+            for (var i = 0; i < Data.length; i++) {
+                $('#ddlBarnch').append($('<option></option>').val(Data[i].BranchID).html(Data[i].BranchName));
+            }
+        })
+
+       
+        $("#calculate").click(function ()
+        {
+            var amount, da, hra, grossSalary, pf, netSalery;
+            amount = $("#txtamount").val();
+            var da = (amount * 8) / 100;
+            $("#da").html(da);
+            var hra = (amount * 10) / 100
+            $("#hra").html(hra);
+            var ot = 1000;
+            $("#ot").html(ot);
+            var ma = (amount * 9) / 100;
+            $("#ma").html(ma);
+            var ca = (amount * 5) / 100;
+            $("#ca").html(ca);
+            var totalearn = parseFloat(amount) + parseFloat(da) + parseFloat(hra) + parseFloat(ot) + parseFloat(ma) + parseFloat(ca);
+            $("#totearning").html(totalearn);
+            var esi = (amount * 5) / 100;
+            $("#esi").html(esi);
+            var pf = (amount * 5) / 100;
+            $("#pf").html(pf);
+            var pt = (amount * 5) / 100;
+            $("#pt").html(pt);
+
+            var totaldeduct = parseFloat(esi) + parseFloat(pf) + parseFloat(pt);
+            $("#totdeduction").html(totaldeduct);
+
+            //$("#txtgrosssalary").val((parseFloat($("#txtda").val()) + parseFloat( $("#txthra").val())) + parseFloat(amount));
+            //$("#txtpf").val(parseFloat(parseFloat((amount * 10) / 100)));
+            $("#txtnetsalary").val(parseFloat(totalearn) - parseFloat(totaldeduct));
+            $("#btnsave").show();
+        });
+
+        $("#btnsave").click(function ()
+        {
+            
+           var amount = $("#txtamount").val();
+            BaranchID = $('#ddlBarnch option:selected').val();
+            AcadmicID = $('#ddlAcadmicYear option:selected').val();
+            if (BaranchID == "select")
+            {
+                $("#divinfo1").html("Please Select Branch Name.........!");
+            }
+            else if (AcadmicID == "select") {
+                $("#divinfo1").html("Please Select Acadmic Year.........!");
+            }
+            else if (amount == "")
+            {
+                $("#divinfo1").html("Please Enter Amount.........!");
+            }
+            else
+            {
+                var flag;
+                if (BaranchID == "0" && AcadmicID == "0")
+                {
+                    flag = 1;
+                }
+                else if (BaranchID != "0" && AcadmicID == "0")
+                {
+                    flag = 2;
+                }
+                else if (BaranchID =="0" && AcadmicID != "0") {
+                    flag = 3;
+                }
+                else if (BaranchID != "0" && AcadmicID != "0") {
+                    flag = 4;
+                }
+
+                $.post("/Admin/Savepayment", { 'UserID': $('#ddlemployee option:selected').val(), 'AcadamicYear': $('#ddlAcadmicYear option:selected').val(), 'BranchID': $('#ddlBarnch option:selected').val(), 'Amount': $("#txtamount").val(), 'DearnessAllowance': $("#da").html(), 'MedicalAllowance': $("#ma").html(), 'HouseRentAllowance': $("#hra").html(), 'Overtime': $("#ot").html(), 'ConveyanceAllowance': $("#ca").html(), 'EmployeeStateInsurance': $("#esi").html(), 'ProvidentFund': $("#pf").html(), 'ProfessionalTax': $("#pt").html(), 'NetAmount': $("#txtnetsalary").val(), 'TotalDeduction': $("#totdeduction").html(), 'TotalEarn': $("#totearning").html() }, function (data) {
+                    if (data > 0)
+                    {
+                        alert("Record Saved.........!");
+                       
+                    }
+                    else {
+
+                        alert("Salary already set of this month.........!");
+                    }
+                });
+
+            }
+        });
+
+
+
+    });
+
+    
+</script>
+<div class="container">
+    <center>
+    <h2>SetPayroll</h2>
+        </center>
+    <div class="row">
+        <div class="col-sm-12" >
+            <div class="alert alert-info fade in" id="divinfo">
+            </div>
+        </div>
+
+    </div>
+
+      <div class="row">
+        
+        <div class="col-sm-2">
+           <h5> Branch :</h5>
+        </div>
+        <div class="col-sm-3">
+              <select class="form-control" id="ddlBarnch" style="border-bottom-color:red;height:40px">
+                      <option value="select">----- Select Branch -----</option>
+                      @*<option value="0">All</option>*@
+                                      
+                 </select>
+        </div>
+        <div class="col-sm-2">
+           <h5> Employee :</h5>
+        </div>
+        <div class="col-sm-3"> 
+          <select class="form-control" id="ddlemployee" style="border-bottom-color:red;height:40px">
+                      <option value="select">----- Select employee -----</option>
+                      @*<option value="0">All</option>*@
+                                      
+                 </select>
+
+        </div>
+        <div class="col-sm-2">
+           
+        </div>
+     
+    </div>
+    <br />
+
+     <div class="row">
+        
+        <div class="col-sm-2">
+           
+        </div>
+        <div class="col-sm-3">
+             
+        </div>
+        <div class="col-sm-2">
+           <h5>Experiance:</h5>
+        </div>
+        <div class="col-sm-1"> 
+         <h5 id="lblexperiance">
+
+         </h5>
+        </div>
+        <div class="col-sm-2">
+           
+        </div>
+       
+     
+    </div>
+
+     <br />
+
+     <div class="row">
+        
+        <div class="col-sm-2">
+           <h5> Attendance :</h5>
+        </div>
+        <div class="col-sm-3">
+             <h5 id="lblattendance"></h5>
+        </div>
+        <div class="col-sm-2">
+           <h5>Daily Allowance:</h5>
+        </div>
+        <div class="col-sm-1"> 
+         <h5 id="lbldailyamt">
+
+         </h5>
+        </div>
+        <div class="col-sm-2">
+           
+        </div>
+       
+     
+    </div>
+    <br />
+     <div class="row" >
+      <div class="col-sm-12" style="height:20px"></div>
+  </div>
+    <br />
+    <!-- Start Control -->
+    
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3"> <h5>Basic Amount :</h5> </div>
+        <div class="col-sm-3"> <span><input type="text" class="form-control onlyNumberWithDecimal" id="txtamount" style="border-bottom-color:red;height:40px" readonly="readonly"></span>
+			</div>
+        <div class="col-sm-4">
+             <a class="fa-btn btn-1 btn-1e" id="calculate">Calculate</a>
+      
+    </div>
+    <br />
+    <!-- Start Table Earn -->
+
+    <div class="row">
+        <div class="col-sm-5">
+            <table class="table responsive" style="border-collapse: collapse; color:black;" >
+                <thead style="background-color: #4CAF50;font-size:20px">
+                    <tr>
+                        <td>Earning</td>
+                        <td>Amount</td>
+                    </tr>
+                </thead>
+                 <colgroup>
+                      <col style=" width:25px" />                    
+                      <col style=" width:5px" />
+
+                  </colgroup>
+                <tbody>
+                    <tr>
+                        <td>Basic Salary</td>
+                        <td id="basic"><b>0.00</b></td>
+                    </tr>
+                    <tr>
+                        <td>Dearness Allowance</td>
+                        <td id="da"><b>0.00</b></td>
+                    </tr>
+                      <tr>
+                        <td>Medical Allowance</td>
+                        <td id="ma"><b>0.00</b></td>
+                    </tr>
+                      <tr>
+                        <td>Overtime</td>
+                        <td id="ot"><b>0.00</b></td>
+                    </tr>
+                       <tr>
+                        <td>House Rent Allowance</td>
+                        <td id="hra"><b>0.00</b></td>
+                    </tr>
+                    <tr>
+                        <td>Conveyance Allowance</td>
+                        <td id="ca"><b>0.00</b></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+  
+        <div class="col-sm-5">
+            <table class="table responsive" style="border-collapse: collapse; color:black;" >
+                <thead style="background-color: #4CAF50;font-size:20px">
+                    <tr>
+                        <td>Deduction</td>
+                        <td>Amount</td>
+                    </tr>
+                </thead>
+                 <colgroup>
+                      <col style=" width:25px" />                    
+                      <col style=" width:5px" />
+
+                  </colgroup>
+                <tbody>
+                    <tr>
+                        <td>Employee State Insurance</td>
+                        <td id="esi"><b>0.00</b></td>
+                    </tr>
+                    <tr>
+                        <td>Provident Fund</td>
+                        <td id="pf"><b>0.00</b></td>
+                    </tr>
+                      <tr>
+                        <td>Professional Tax</td>
+                        <td id="pt"><b>0.00</b></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       
+    </div>
+ 
+     <!-- end Table Earn -->
+    <br />
+     <div class="row">   
+         <div class="alert alert-danger fade in col-sm-10">
+        <div class="col-sm-2"><h5>Total Earning :</h5> </div>
+        <div class="col-sm-3"> <label id="totearning"><b></b></label>
+			</div>
+         <div class="col-sm-2"><h5>Total Deduction :</h5> </div>
+         <div class="col-sm-3"> <label id="totdeduction"><b></b></label>
+               </div>
+        <div class="col-sm-4"></div>
+         </div>    
+            
+    </div>
+   
+
+     <br />
+     <div class="row">        
+      @*  <div class="col-sm-2"> <h5>Gross Salary :</h5> </div>
+        <div class="col-sm-3"> <span><input type="text" class="form-control" id="txtgrosssalary" style="border-bottom-color:red;height:40px" readonly="readonly"></span>
+			</div>*@
+         <div class="col-sm-2"><h5>Net Salary : </h5></div>
+        <div class="col-sm-3"> <span><input type="text" class="form-control" id="txtnetsalary" style="border-bottom-color:red;height:40px" readonly="readonly"></span>
+			</div>
+        <div class="col-sm-4"></div>
+    </div>
+   @* <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3"><h5>HRA : </h5> </div>
+        <div class="col-sm-3"> <span><input type="text" class="form-control" id="txthra" style="border-bottom-color:red;height:40px" readonly="readonly"></span>
+			</div>
+        <div class="col-sm-4"></div>
+    </div>
+    <br />*@
+
+  
+    <br />
+      <div class="row">
+        <div class="col-sm-7">
+
+        </div>
+        <div class="col-sm-4">
+             <a class="fa-btn btn-1 btn-1e" id="btnsave">Save</a>
+        </div>
+        <div class="col-sm-1"></div>
+
+    </div>
+    
+  
+
+        <!--- This for error display ---> 
+      <div class="row">
+            <div class="col-sm-12" >
+            <div class="alert alert-info fade in" id="divinfo1">
+            </div>
+    </div>
+         
+       
+    </div>
+
+</div>
+</div>

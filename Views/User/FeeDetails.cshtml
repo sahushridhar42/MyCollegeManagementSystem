@@ -1,0 +1,166 @@
+﻿@{
+    ViewBag.Title = "FeeDetails";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+<center>
+<h2>Fee Details</h2>
+</center>
+<script>
+    $(document).ready(function () {
+
+        var userid = "@Session["uid"]";
+        var UserName = "@Session["username"]";
+        var role = "@Session["Role"]";
+        
+        $.post("/User/GetAllUserByID", { 'userid': userid }, function (data) {
+
+            for(var i=0;i<data.length;i++)
+            {
+                $("#lblname").html(data[i].FullName);
+                $("#lblprn").html(data[i].UserID);
+                $("#lblcourse").html(data[i].Branch);
+                
+                $("#lblAcyear").html(data[i].AcadamicYear);
+            }
+        });
+
+
+        $.post("/User/GetPymentDetailsById", { 'id': userid }, function (data) {
+
+          //  alert("Function Call" + data);
+            if (data == "")
+            {
+                $("#lblStatus").html("Your Full Amount Remening");
+            }
+            else
+                {
+                for (var i = 0; i < data.length; i++) {
+                    var amt;
+
+                    $("#lblAmount").html(data[i].Amount);
+                    $("#lblrem").html(data[i].RemAmt);
+                    $("#lblpaid").html(data[i].PaidAmount);
+
+                }
+            }
+        });
+
+    });
+
+
+
+  
+    
+   </script>
+
+<div class="container">
+      
+    <div class="row">
+        <div class="col-sm-12" >
+            <div class="alert alert-info fade in" id="divinfo">
+            </div>
+        </div>
+    </div>
+
+    <div class="row" >
+        <div class="col-sm2"></div>
+        <div class="col-sm-2"><h4> PRN No : </h4></div>
+         <div class="col-sm-6"><h4> <label id="lblprn"></label> </h4></div>
+        <div class="col-sm2"></div>
+
+    </div>
+
+     <div class="row" >
+        <div class="col-sm2"></div>
+        <div class="col-sm-2"><h4> Name : </h4></div>
+         <div class="col-sm-6"><h4> <label id="lblname"></label> </h4></div>
+        <div class="col-sm2"></div>
+
+    </div>
+
+     <div class="row" >
+        <div class="col-sm2"></div>
+        <div class="col-sm-2"><h4> Course Name : </h4></div>
+         <div class="col-sm-4"><h4> <label id="lblcourse"></label> </h4></div>
+          <div class="col-sm-2"><h4>Acadmic Year :</h4> </div>
+          <div class="col-sm-2"><h4> <label id="lblAcyear"></label> </h4></div>
+ 
+       
+          </div>
+
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10" style="height:5px;background-color:black">
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+    
+    <div class="row">
+    <div class="col-sm-12" style="height:25px">
+
+    </div>
+</div> 
+
+    <div class="row">
+        <div class="col-sm-3">
+
+        </div>
+        <div class="col-sm-3">
+           <h4> Payment Amount :</h4>
+        </div>
+        <div class="col-sm-3">
+            <h4> <label id="lblAmount"></label></h4>
+        </div>
+        <div class="col-sm-3">
+
+        </div>
+    </div>
+
+     <div class="row">
+        <div class="col-sm-3">
+
+        </div>
+        <div class="col-sm-3">
+           <h4> Paid Amount :</h4>
+        </div>
+        <div class="col-sm-3">
+            <h4> <label id="lblpaid"></label></h4>
+        </div>
+        <div class="col-sm-3">
+
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col-sm-3">
+
+        </div>
+        <div class="col-sm-3">
+           <h4> Remening Amount :</h4>
+        </div>
+        <div class="col-sm-3">
+            <h4> <label id="lblrem"></label></h4>
+        </div>
+        <div class="col-sm-3">
+
+        </div>
+    </div>
+
+     <div class="row">
+        <div class="col-sm-2">
+
+        </div>
+       
+        <div class="col-sm-8">
+            <center>
+            <h3> <label id="lblStatus" style="color:red"></label></h3>
+                </center>
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+    </div>
+
+</div>
+      

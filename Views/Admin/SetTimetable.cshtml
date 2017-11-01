@@ -1,0 +1,292 @@
+﻿@{
+    ViewBag.Title = "SetTimetable";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<a href="~/Views/Admin/SetTimetable.cshtml"></a>
+<script src="~/Main%20Script/js/bootstrap-datetimepicker.min.js"></script>
+<script src="~/Main%20Script/js/bootstrap-datepicker.js">
+</script><script src="~/Main%20Script/js/boostrap-datepicker.js"></script>
+<script>
+    $(document).ready(function ()
+    {
+      
+        var ExamID=0, Date, BranchID=0, AcadmicID=0,row1,MasterID;
+        //<a href="~/Views/Admin/SetTimetable.cshtml">~/Views/Admin/SetTimetable.cshtml</a>
+        $('#txtdate').datepicker({
+            format: 'mm/dd/yyyy'
+        });
+        
+       
+        $("#ddlAcadmicYear").change(function () {
+
+            var id = $('#ddlAcadmicYear option:selected').val();
+           
+            if (id == "1st Year")
+            {
+                $('#ddlExam').empty();
+                
+                $('#ddlExam').append($('<option></option>').val("0").html("----- Select Exam -----"));
+                $('#ddlExam').append($('<option></option>').val("1st Sem").html("1st Sem"));
+                $('#ddlExam').append($('<option></option>').val("2nd Sem").html("2nd Sem"));
+            }
+            else if (id == "2nd Year") {
+                $('#ddlExam').empty();
+                $('#ddlExam').append($('<option></option>').val("0").html("----- Select Exam -----"));
+                $('#ddlExam').append($('<option></option>').val("3rd Sem").html("3rd Sem"));
+                $('#ddlExam').append($('<option></option>').val("4th Sem").html("4th Sem"));
+                     }
+            else if (id == "3rd Year") {
+                $('#ddlExam').empty();
+                $('#ddlExam').append($('<option></option>').val("0").html("----- Select Exam -----"));
+                $('#ddlExam').append($('<option></option>').val("5th Sem").html("5th Sem"));
+                $('#ddlExam').append($('<option></option>').val("6th Sem").html("6th Sem"));
+                     }
+            else if (id == "4th Year") {
+                $('#ddlExam').empty();
+                $('#ddlExam').append($('<option></option>').val("0").html("----- Select Exam -----"));
+                $('#ddlExam').append($('<option></option>').val("7th Sem").html("7th Sem"));
+                $('#ddlExam').append($('<option></option>').val("8th Sem").html("8th Sem"));
+                     }
+        });
+
+
+        $.post("/Admin/GetBranch", function (Data) {
+            for (var i = 0; i < Data.length; i++) {
+                $('#ddlBarnch').append($('<option></option>').val(Data[i].BranchID).html(Data[i].BranchName));
+            }
+        })
+
+        $("#ddlExam").change(function () {ExamID = $('#ddlExam option:selected').val();});
+        $("#ddlBarnch").change(function () { BranchID = $('#ddlBarnch option:selected').val(); });
+        $("#ddlAcadmicYear").change(function () { AcadmicID = $('#ddlAcadmicYear option:selected').val(); });
+        Date = $("#txtdate").val();
+        $("#divAdd").hide();
+
+        $("#btnaddtemp1").click(function ()
+        {
+           
+            var subject, edate, time, mark,branchid,acdmicyear;
+            subject = $("#txtSubject").val();
+            edate = $("#txtdate").val();
+            time = $("#txtTime").val();
+            mark = $("#txtMark").val();
+          
+            if (subject == "")
+            {
+                $("#divinfo").html("Please Enter Subject.........!");
+            }
+            else if(edate=="")
+            {
+                $("#divinfo").html("Please Enter Exam Date.........!");
+            }
+            else if (time == "")
+            {
+                $("#divinfo").html("Please Enter Time.........!");
+            }
+            else if (mark == "")
+            {
+                $("#divinfo").html("Please enter mark........!");
+            }
+            else
+            {
+                    $.post("/Admin/TimeTableInsert", { 'subject': subject, 'edate': edate, 'time': time, 'mark': mark, 'id': MasterID }, function (data) {
+                    if (data > 0) {
+                        $("#divinfo").html("Record Saved.........!");
+                        $("#txtSubject").val("");
+                        $("#txtTime").val("");
+                        $("#txtMark").val("");
+                        $("#txtdate").val("");
+                    }
+                    else {
+                        $("#divinfo").html("Record Not Saved.........!");
+                    }
+
+
+                });
+
+            }
+        });
+
+        $("#btnClear").click(function ()
+        {
+            $("#txtSubject").val("");
+            $("#txtTime").val("");
+            $("#txtMark").val("");
+            $("#txtdate").val("");
+        });
+
+
+        $("#btnAdd5").click(function ()
+        {
+            if (ExamID == 0)
+            {
+              
+                $("#divinfo").html("Please Select Emam.........!");
+             
+            }
+            else if (BranchID == 0)
+            {
+                $("#divinfo").html("Please Select Branch Name.........!");
+            }
+            else if (AcadmicID == 0)
+            {
+                $("#divinfo").html("Please Select Acadmic Year.........!");
+            }
+            else
+            {
+                var examinection;
+                examinection = $('#ddlExam option:selected').html();
+                BranchID = $('#ddlBarnch option:selected').val();
+                AcadmicID = $('#ddlAcadmicYear option:selected').val();
+               
+                $.post("/Admin/InsertTimetabbleMaster", { 'examinection': examinection, 'BranchID': BranchID, 'AcadmicID': AcadmicID }, function (data) {
+                    if (data > 0)
+                    {
+                        MasterID = data;
+                        $("#divinfo").html("Record Insert Sucessfully In Master.........!");
+                        $("#divAdd").show();
+                    }
+                    else
+                    {
+                        $("#divinfo").html("There is an Error to save record In Master.........!");
+                    }
+
+
+                });
+
+
+              
+               
+            }
+           
+        });
+       
+    }); 
+</script>
+
+
+
+<h2> </h2>
+
+<div class="container">
+    <center>
+        <h2>Set Time Table</h2>
+    </center>
+    <!-- First Row --->
+    <div class="row" style="">
+       
+                <div class="col-sm-2"></div>
+             
+
+              <div class="col-sm-2">
+            <span>
+			    <select class="form-control" id="ddlBarnch" style="border-bottom-color:red;height:40px">
+                      <option value="0">----- Select Branch -----</option>
+                                      
+                 </select>
+            </span>
+        </div>
+        
+              <div class="col-sm-2">
+            <span>
+			    <select class="form-control" id="ddlAcadmicYear" style="border-bottom-color:red;height:40px">
+                      <option value="0">----- Select Acadmic Year -----</option>
+                      <option value="1st Year">1st Year</option>
+                      <option value="2nd Year">2nd Year</option>
+                      <option value="3rd Year">3rd Year</option>
+                      <option value="4th Year">4th Year</option>
+
+                      
+                 </select>
+            </span>
+        </div>
+         <div class="col-sm-2">
+            <span>
+			    <select class="form-control " id="ddlExam" style="border-bottom-color:red;height:40px">
+                      <option value="0">----- Select Exam -----</option>
+                      <option value="1">1st Sem</option>
+                      <option value="2">2nd Sem</option>
+                      
+                 </select>
+            </span>
+        </div>
+             
+              <div class="col-sm-2"></div>
+        </Div>
+    <div class="row"> 
+              <div class="col-sm-6"></div>
+              <div class="col-sm-4">
+            
+     <!-- href="javascript:anchorScr" this is accher click Event  --->
+            
+            <a class="fa-btn btn-1 btn-1e" id="btnAdd5">Add Details</a>
+            @*//<input type="button" class="fa-btn btn-1 btn-1e" id="btnAdd5" value="ADD DETAILS" /> *@
+        </div>
+            <div class="col-sm-2"></div>
+         
+         </div>
+    <!-- First Row --->
+
+     <!-- Secounnd Row --->
+
+    <div id="divAdd">
+        <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10"> <h2> Details Here</h2></div>
+         <div class="col-sm-1"></div>
+        </div>
+        
+     
+       <div class="row">
+           <div class="col-sm-1"></div>
+            <div class="col-sm-2"><h5>Subject :</h5> 
+                      <span><input type="text" class="form-control" id="txtSubject" style="border-bottom-color:red;height:40px" ></span>
+			</div>
+          <div class="col-sm-2"> <h5> Date</h5>
+            <span><input type="text" class="form-control" id="txtdate" style="border-bottom-color:red;height:40px" readonly="readonly"></span>
+			
+        
+        </div> 
+              
+
+       
+                     <div class="col-sm-2"><h5>Time :</h5> 
+                      <span><input type="text" class="form-control" id="txtTime" style="border-bottom-color:red;height:40px" /></span>
+			         </div>
+                    <div class="col-sm-2">
+                        <h5>Mark :</h5>
+                                         
+                      <span><input type="text" class="form-control" id="txtMark" style="border-bottom-color:red;height:40px" ></span>
+			        </div>  
+              <div class="col-sm-2">
+                          
+              </div>
+              <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-5">
+                
+            
+            </div>
+            <div class="col-sm-5">
+                  <a  class="fa-btn btn-1 btn-1e" id="btnaddtemp1">Add </a>
+                  <a  class="fa-btn btn-1 btn-1e" id="btnClear">Cleare </a>
+            </div>
+            <div class="col-sm-2">
+                
+            
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+        </div>
+    
+   
+     <div class="alert alert-info fade in" id="divinfo">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Info!</strong>
+  </div>
+        </div>
+
+				    	

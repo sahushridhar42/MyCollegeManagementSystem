@@ -1,0 +1,238 @@
+﻿@{
+    ViewBag.Title = "SetResult";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2></h2>
+<script>
+    $(document).ready(function () {
+        var total = 0;
+        var count;
+        $("#alert").hide();
+        $("#tblsubject").hide();
+        $("#h1").hide();
+        var branch;
+        var acadamicyear;
+        var examinationid;
+        $.post("/Admin/GetBranch", function (Data) {
+            for (var i = 0; i < Data.length; i++) {
+                $('#ddlbranch').append($('<option></option>').val(Data[i].BranchID).html(Data[i].BranchName));
+            }
+        });
+
+        $("#ddlacadamicyear").change(function () {
+            acadamicyear = $('#ddlacadamicyear option:selected').val();
+            branch = $('#ddlbranch option:selected').val();
+            if (branch == "none") {
+                $("#alert").show();
+                $("#alert").html("Please Select Branch ...............!");
+                $("#txtnotice").focus();
+            }
+            else {
+                $('#ddlstudent').empty();
+                $('#ddlstudent').append($('<option></option>').val("none").html("Select Student"));
+                $.post("/Admin/GetUserByAcadamicYearandBranch", { 'branch': branch, 'AcadamicYear': acadamicyear }, function (Data) {
+                    for (var i = 0; i < Data.length; i++) {
+                        $('#ddlstudent').append($('<option></option>').val(Data[i].UserID).html(Data[i].FullName));
+                    }
+
+                });
+
+                $('#ddlexamination').empty();
+                $('#ddlexamination').append($('<option></option>').val("none").html("Select Examination"));
+                $.post("/Admin/GetExaminationByBranchAndAcadamicYear", { 'branch': branch, 'acadamicyear': acadamicyear }, function (Data) {
+
+                    for (var i = 0; i < Data.length; i++) {
+                        $('#ddlexamination').append($('<option></option>').val(Data[i].ExaminationID).html(Data[i].Examination));
+                    }
+
+                });
+            }
+            //$('#ddlexamination').empty();
+            //$('#ddlexamination option:selected').html("Select Examination");
+            //$('#ddlexamination option:selected').val("none");
+        });
+
+        $("#ddlexamination").change(function () {
+
+            examinationid = $('#ddlexamination option:selected').val();
+            $("#h1").show();
+            $("#tblsubject").show();
+            $("tbody").empty();
+            $.post("/Admin/GetExaminationSubjectbyAcadamicYearBranchIDExaminationID", { 'branch': branch, 'acadamicyear': acadamicyear, 'examinationid': examinationid }, function (Data) {
+                //  alert("call");
+                count = Data.length;
+                for (var i = 0; i < Data.length; i++) {
+
+                    var row = "<tr><td><lable id='lblsub" + i + "'>" + Data[i].Subject + "</lable></td><td><input type='text' class='form-control' id='txt" + i + "' style='border:groove'/></td><td><lable id='lblmark" + i + "'>" + Data[i].Marks + "</lable></td></tr>"
+                    $("tbody").append(row);
+                }
+
+            });
+        });
+
+        $("#btnreg").click(function () {
+
+            var userid = $('#ddlstudent option:selected').val();
+            //  alert(examinationid)
+            if (branch == "none") {
+                $("#alert").show();
+                $("#alert").html("Please Select Branch...............!");
+                $("#ddlbranch").focus();
+            }
+            else if (acadamicyear == "none") {
+                $("#alert").show();
+                $("#alert").html("Please Select Acadamic Year...............!");
+                $("#ddlacadamicyear").focus();
+            }
+            else if (userid == "none") {
+                $("#alert").show();
+                $("#alert").html("Please Select User...............!");
+                $("#ddlstudent").focus();
+            }
+            else if (examinationid == "undefined") {
+                $("#alert").show();
+                $("#alert").html("Please Select Examination...............!");
+                $("#ddlexamination").focus();
+            }
+
+            else {
+                $("#alert").hide();
+                for (var j = 0; j < count; j++) {
+                    var mark = $("#txt" + j + "").val();
+                    var subject = $("#lblsub" + j + "").text();
+                    var OutOfMarks = $("#lblmark" + j + "").text();
+                    $.post("/Admin/AddResult", { 'BranchID': branch, 'UserID': userid, 'ExaminationID': examinationid, 'Subject': subject, 'Marks': mark }, function (data) {
+                        alert(data);
+                    });
+                }
+                $("#btnreg").hide();
+                $("#btnnew").show();
+                $.post("/Admin/SendResultAlertMailToStudent", { 'userid': userid }, function (data) {
+                    alert("send");
+                });
+            }
+        });
+        $("#btnnew").click(function () {
+            $("#btnreg").show();
+            $("#btnnew").hide();
+            window.location.href = "/Admin/SetResult";
+
+        });
+
+    });
+</script>
+
+<div class="container">
+    <center>
+        <h2> Set Result</h2>
+    </center>
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-2">
+            <h5>Branch</h5>
+        </div>
+        <div class="col-sm-6">
+            <select id="ddlbranch" class="form-control" style="border:groove;">
+                <option value='none'>Select Branch</option>
+            </select>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-2">
+            <h5>Acadamic Year</h5>
+        </div>
+        <div class="col-sm-6">
+            <select id="ddlacadamicyear" class="form-control" style="border:groove;">
+                <option value='none'>Select Branch</option>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>4th Year</option>
+            </select>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-2">
+            <h5>Student :</h5>
+        </div>
+        <div class="col-sm-6">
+            <select id="ddlstudent" class="form-control" style="border:groove;">
+                <option value='none'>Select Student</option>
+            </select>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-2">
+            <h5>Examination</h5>
+        </div>
+        <div class="col-sm-6">
+            <select id="ddlexamination" class="form-control" style="border:groove;">
+                <option value='none'>Select Examination</option>
+            </select>
+        </div>
+    </div>
+    <br />
+    <center>
+        <h2 id="h1"> Fill Marks </h2>
+    </center>
+    <br />
+    <br />
+
+    <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-6">
+            <table id="tblsubject" class="table col-sm-4 responsive" style="border-collapse: collapse; color:black;width: 100%;">
+                <thead>
+                    <tr>
+                        <td> Subject </td>
+                        <td> Marks </td>
+                        <td> Out Of Marks </td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+        <span></span>
+        <div class="col-sm-3">
+            <a class="fa-btn btn-1 btn-1e" id="btnreg">Submit</a>
+        </div>
+        <div class="col-sm-3">
+            <a class="fa-btn btn-1 btn-1e" id="btnnew">New</a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-2">
+
+    </div>
+    <span></span>
+    <div class="col-sm-6">
+        <div class="alert alert-success" id="alert"></div>
+    </div>
+</div>

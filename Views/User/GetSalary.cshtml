@@ -1,0 +1,272 @@
+﻿@{
+    ViewBag.Title = "GetSalary";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2></h2>
+<script>
+    $(document).ready(function () {
+        var userid = "@Session["uid"]";
+        $("#lblmsg").hide();
+        $.post("/User/GetSalaryDetails", { 'userid': userid }, function (Data) {
+            if (Data == 'null')
+            {
+                $("#lblsid").hide();
+                $("#lblbranch").hide();
+                $("#lblacay").hide();
+                $("#sname").hide();
+                $("#br").hide();
+                $("#ay").hide();
+                $("#lblbasic").hide();
+
+                $("#lblbasic").hide();
+                $("#lblda").hide();
+                $("#lblhra").hide();
+                $("#lblgross").hide();
+                $("#lblpf").hide();
+                $("#lblnet").hide();
+
+                $("#tbldeduct").hide();
+                $("#tblearn").hide();
+                $("#divded").hide();
+                $("#txtnetsalary").hide();
+                $("#lblnet").hide();
+                
+               
+                
+                $("#lblsid").text(Data.FullName);
+                $("#lblbranch").text(Data.Branch);
+                $("#lblacay").text(Data.AcadamicYear);
+                $("#lblmsg").show();
+                $("#lblmsg").html("Salary not set to this month ...............!");
+            }
+            else {
+
+                $("#lblsid").text(Data.FullName);
+                $("#lblbranch").text(Data.Branch);
+                $("#lblacay").text(Data.AcadamicYear);
+               // $("#lblbasic").text(Data.lblbasic);
+
+                $("#basic").text(Data.Amount);
+
+                $("#da").text(Data.DearnessAllowance);
+                $("#ma").text(Data.MedicalAllowance);
+                $("#hra").text(Data.HouseRentAllowance);
+                $("#ot").text(Data.Overtime);
+                $("#ca").text(Data.ConveyanceAllowance);
+                $("#esi").text(Data.EmployeeStateInsurance);
+                $("#pf").text(Data.ProvidentFund);
+                $("#pt").text(Data.ProfessionalTax);
+                $("#txtnetsalary").val(Data.NetAmount);
+                $("#totearning").text(Data.TotalEarn);
+                $("#totdeduction").text(Data.TotalDeduction);
+            }
+        });
+    });
+</script>
+
+<div class="container">
+    <center>
+        <h2>Get Salary</h2>
+    </center>
+    
+         <div class="row">  
+             <div>
+                <h4 id="lblmsg">a</h4>
+            </div>
+            <div>
+                <h4 id="sname">Your Name : &nbsp;&nbsp;&nbsp;<label id="lblsid"></label></h4>
+            </div>
+        </div>
+        <div class="row">  
+            <div>
+                <h4 id="br">Branch : &nbsp;&nbsp;&nbsp;<label id="lblbranch"></label></h4>
+            </div>
+        </div>
+        <div class="row">  
+                <div>
+                    <h4 id="ay">Acadamic Year : &nbsp;&nbsp;&nbsp;<label id="lblacay"></label></h4>
+                </div>
+            </div>
+     <br />
+    <!-- Start Table Earn -->
+
+    <div class="row">
+        <div class="col-sm-5">
+            <table id="tblearn" class="table responsive" style="border-collapse: collapse; color:black;" >
+                <thead style="background-color: #4CAF50;font-size:20px">
+                    <tr>
+                        <td>Earning</td>
+                        <td>Amount</td>
+                    </tr>
+                </thead>
+                 <colgroup>
+                      <col style=" width:25px" />                    
+                      <col style=" width:5px" />
+
+                  </colgroup>
+                <tbody>
+                    <tr>
+                        <td>Basic Salary</td>
+                        <td id="basic"><b>0.00</b></td>
+                    </tr>
+                    <tr>
+                        <td>Dearness Allowance</td>
+                        <td id="da"><b>0.00</b></td>
+                    </tr>
+                      <tr>
+                        <td>Medical Allowance</td>
+                        <td id="ma"><b>0.00</b></td>
+                    </tr>
+                      <tr>
+                        <td>Overtime</td>
+                        <td id="ot"><b>0.00</b></td>
+                    </tr>
+                       <tr>
+                        <td>House Rent Allowance</td>
+                        <td id="hra"><b>0.00</b></td>
+                    </tr>
+                    <tr>
+                        <td>Conveyance Allowance</td>
+                        <td id="ca"><b>0.00</b></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+  
+        <div class="col-sm-5">
+            <table class="table responsive" id="tbldeduct" style="border-collapse: collapse; color:black;" >
+                <thead style="background-color: #4CAF50;font-size:20px">
+                    <tr>
+                        <td>Deduction</td>
+                        <td>Amount</td>
+                    </tr>
+                </thead>
+                 <colgroup>
+                      <col style=" width:25px" />                    
+                      <col style=" width:5px" />
+
+                  </colgroup>
+                <tbody>
+                    <tr>
+                        <td>Employee State Insurance</td>
+                        <td id="esi"><b>0.00</b></td>
+                    </tr>
+                    <tr>
+                        <td>Provident Fund</td>
+                        <td id="pf"><b>0.00</b></td>
+                    </tr>
+                      <tr>
+                        <td>Professional Tax</td>
+                        <td id="pt"><b>0.00</b></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       
+    </div>
+     <br />
+     <div class="row">   
+         <div id="divded" class="alert alert-danger fade in col-sm-10">
+        <div class="col-sm-2"><h5>Total Earning :</h5> </div>
+        <div class="col-sm-3"> <label id="totearning"><b></b></label>
+			</div>
+         <div class="col-sm-2"><h5>Total Deduction :</h5> </div>
+         <div class="col-sm-3"> <label id="totdeduction"><b></b></label>
+               </div>
+        <div class="col-sm-4"></div>
+         </div>    
+            
+    </div>
+   
+
+     <br />
+     <div class="row">        
+      @*  <div class="col-sm-2"> <h5>Gross Salary :</h5> </div>
+        <div class="col-sm-3"> <span><input type="text" class="form-control" id="txtgrosssalary" style="border-bottom-color:red;height:40px" readonly="readonly"></span>
+			</div>*@
+         <div class="col-sm-2"><h5 id="lblnet">Net Salary : </h5></div>
+        <div class="col-sm-3"> <span><input type="text" class="form-control" id="txtnetsalary" style="border-bottom-color:red;height:40px" readonly="readonly"></span>
+			</div>
+        <div class="col-sm-4"></div>
+    </div>
+
+
+
+
+
+@*    <div class="row">
+        <div class="col-sm-5">
+
+        </div>
+        <div class="col-sm-3">
+             <h4>Basic Salary :</h4>
+        </div>
+        <div class="col-sm-3">
+            <h4> <label id="lblbasic">a</label></h4>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        </div>
+    <div class="row">
+        <div class="col-sm-5">
+
+        </div>
+        <div class="col-sm-3">
+             <h4>DA :</h4>
+        </div>
+        <div class="col-sm-3">
+            <h4> <label id="lblda">a</label></h4>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        </div>
+
+    <div class="row">
+        <div class="col-sm-5">
+
+        </div>
+        <div class="col-sm-3">
+             <h4>HRA :</h4>
+        </div>
+        <div class="col-sm-3">
+            <h4> <label id="lblhra">a</label></h4>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        </div>
+
+     <div class="row">
+        <div class="col-sm-5">
+
+        </div>
+        <div class="col-sm-3">
+             <h4>Gross Salary :</h4>
+        </div>
+        <div class="col-sm-3">
+            <h4> <label id="lblgross">a</label></h4>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        </div>
+
+    <div class="row">
+        <div class="col-sm-5">
+
+        </div>
+        <div class="col-sm-3">
+             <h4>Net Salary :</h4>
+        </div>
+        <div class="col-sm-3">
+            <h4> <label id="lblnet">a</label></h4>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        </div>
+
+        <center>
+            <h4> <label id="lblmsg">a</label></h4>
+        </center>*@
+      
+</div>

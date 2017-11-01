@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Attendance";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2></h2>
+<script>
+    $(document).ready(function ()
+    {
+        var userid = "@Session["uid"]";
+        var UserName = "@Session["username"]";
+        var role = "@Session["Role"]";
+        var bachID = "@Session["BranchID"]";
+        var Acadamicyear = "@Session["AcadamicYear"]";
+        $.post("/User/GetUserForAttendance", { 'brach': bachID, 'acadamicyear': Acadamicyear }, function (data) {       
+            for (var i = 0; i < data.length; i++) {
+        
+                var row = "<tr><td><label>" + data[i].UserID + "</label></td><td><label>" + data[i].FullName + "</label></td><td><label>" + data[i].Branch + "</label></td><td><label>" + data[i].AcadamicYear + "</label></td><td><a onclick='Delete(" + data[i].UserID + ")' class='btn btn-primary'>Presenty<a/></td> <td><a onclick='NoPresent(" + data[i].UserID + ")' class='btn btn-primary'>Absent<a/></td></tr>"
+                    $("#tbody").append(row);
+                }
+        });
+    });
+    function Delete(id) {
+      
+        $.post("/User/insertAttendance", { 'userid': id }, function (data) {
+            alert(data);
+        });
+    }
+    function NoPresent(id)
+    {
+        alert("Not Present  " + id);
+
+        $.post("/User/UpdateAttendance", { 'userid': id }, function (data) {
+            alert(data);
+        });
+    }
+    
+
+    </script>
+<div class="container">
+
+     <center>
+             <h2>Daily attendance </h2>
+              <table class="table col-sm-4 responsive" style="border-collapse: collapse; color:black;width: 100%;">
+                  <thead style="background-color: #4CAF50;font-size:20px">
+                      <tr>
+                          <td>Roll No</td>
+                          <td>Name</td>
+                          <td>Branch</td>
+                          <td>Acadamic Year</td>
+                         <td>Attendance</td>
+                          <td></td>
+                      </tr>
+                  </thead>
+            
+                  <tbody id="tbody" style="font-size:15px"></tbody>
+              </table>
+                </center>
+</div>

@@ -1,0 +1,107 @@
+﻿@{
+    ViewBag.Title = "Attendanceemp";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2></h2>
+
+<script>
+    $(document).ready(function ()
+    {
+        var userid = "@Session["uid"]";
+        @*  var UserName = "@Session["username"]";
+        var role = "@Session["Role"]";
+        var bachID = "@Session["BranchID"]";
+        var Acadamicyear = "@Session["AcadamicYear"]";*@
+        $("#tbl").hide();
+  
+        $.post("/Admin/GetBranch", function (Data) {
+            for (var i = 0; i < Data.length; i++) {
+                $('#ddlbranch').append($('<option></option>').val(Data[i].BranchID).html(Data[i].BranchName));
+            }
+        });
+
+        $('#ddlbranch').change(function () {
+            var Branch = $('#ddlbranch option:selected').val();
+            //var year = $('#ddlyear option:selected').val();
+
+            $.post("/Admin/GetUserForAttendance", { 'branch': Branch }, function (data) {
+                $("#tbody").empty();
+                if (data != 0) {
+                    
+                    $("#tbl").show();
+                    for (var i = 0; i < data.length; i++) {
+
+                        var row = "<tr><td><label>" + data[i].UserID + "</label></td><td><label>" + data[i].FullName + "</label></td><td><label>" + data[i].Branch + "</label></td><td><label>" + data[i].AcadamicYear + "</label></td><td><a onclick='Delete(" + data[i].UserID + ")' class='btn btn-primary'>Presenty<a/></td><td><a onclick='UpdatePresent(" + data[i].UserID + ")' class='btn btn-primary'>Absent<a/></td></tr>"
+                        $("#tbody").append(row);
+                    }
+                }
+                else {
+
+
+                    $("#tbl").hide();
+                    alert("Data is not available for this Department...................!");
+                  
+                }
+            });
+        });
+      
+    });
+    function Delete(id) {
+      
+        $.post("/Admin/insertAttendance", { 'userid': id }, function (data) {
+            alert(data);
+        });
+    }
+    function UpdatePresent(id) {
+        alert(id);
+        $.post("/Admin/UpdateAttendance", { 'userid': id }, function (data) {
+            alert(data);
+        });
+    }
+
+    </script>
+<div class="container">
+
+     <center>
+             <h2>Daily Attendance </h2>
+         <br />
+         <div class="row">
+         <div class="col-sm-5">
+             <centre>
+                 <select id="ddlbranch" class="form-control" style="border:groove;height:40px">
+                     <option value='none'>Select Branch</option>
+        </select>
+             </centre>
+                      </div>
+             </div>
+         <br />
+     @*    <div class="row">
+         <div class="col-sm-5">
+         <select id="ddlyear" class=" form-control" style="border:groove;height:40px">
+            <option value='none'>Select Acadamic Year</option>
+            <option value="1st Year">1st Year</option>
+            <option value="2nd Year">2nd Year</option>
+             <option value="3rd Year">3rd Year</option>
+            <option value="4th Year">4th Year</option>
+        </select>
+        </div>
+</div>*@
+
+         <br />
+              <table id="tbl" class="table col-sm-4 responsive" style="border-collapse: collapse; color:black;width: 100%; ">
+                  <thead style="background-color: #4CAF50;font-size:20px">
+                      <tr>
+                          <td>Roll No</td>
+                          <td>Name</td>
+                          <td>Branch</td>
+                          <td>Acadamic Year</td>
+                         <td>Attendance</td>
+                          <td></td>
+                      </tr>
+                  </thead>
+            
+                  <tbody id="tbody" style="font-size:15px"></tbody>
+              </table>
+                </center>
+</div>
